@@ -1159,7 +1159,12 @@ footer ul li h6 {
     .section_ul_li_div {
         justify-content: space-evenly;
     }
-
+    .imgFondo {
+        min-height: 262px;
+    }
+    .imgFondo h1 {
+        padding: 10rem 0rem;
+    }
 }
 
 /*--------------- TAMAÑO LAPTOP 1200px -------------*/
