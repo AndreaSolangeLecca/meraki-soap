@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, shrink-to-fit = no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>MERAKI SOAP</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="navBar">
+            <button class="bntMenu">
+                <i class=" material-icons icono-menu hamburguesa">menu</i>
+            </button>
+            <figure><img src="../imagenes/logo-meraki-soap.svg" alt="logo meraki" class="logoMerakiHeader"></figure>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html" class="nav_a">INICIO</a></li>
+                    <li><a href="./productos.html" class="nav_a">PRODUCTOS</a></li>
+                    <li><a href="./boxmeraki.html" class="nav_a">¡BOX MERAKI!</a></li>
+                    <li><a href="./sobrenosotros.html" class="nav_a">MERAKI</a></li>
+                </ul>
+            </nav>
+            <a class="header_div_a"><img src="../imagenes/icono-carrito-meraki.png" alt="icono-carrito" class="iconoCarrito"></a>
+            <a href="./iniciarsesion.html" class="header_div_a"><img src="../imagenes/icono-usuario-meraki.png" alt="icono usuario"
+                    class="iconoUsuario"></a>
+        </div>
+        <div class="cajaBuscador">
+            <input type="text" placeholder="Buscá tu próximo producto" class="buscador">
+            <img src="../imagenes/icono-lupa-meraki.svg" alt="icono lupa" class="iconoLupa">
+        </div>
+    </header>
+    <main>
+        <section class="detalle_main_section margenes">
+            <div class="detalle_main_section_div">
+                <div class="detalle_main_section_div_div">
+                    <a href="../index.html" class="detalle_main_sectio_a"> INICIO</a>
+                    <a href="./productos.html" class="detalle_main_sectio_a">/ PRODUCTOS MERAKI</a>
+                    <a href="./detalleproducto.html" class="detalle_main_sectio_a-bold">/ LIMÓN Y CÚRCUMA</a>
+                </div>
+                <div class="detalle_main_section_div-flex">
+                    <figure class="detalle_main_section_div_figure"><img src="../imagenes/img-detalleproducto2.PNG"
+                            alt="producto jabón2"></figure>
+                    <figure class="detalle_main_section_div_figureDos"><img
+                            src="../imagenes/img-detalleproductojabon.jpg" alt="producto jabón"></figure>
+                </div>
+            </div>
+            <div class="detalle_main_section_divEspecificaciones">
+                <h1 class="detalle_main_section_h1">Jabón saponificado</h1>
+                <h2 class="detalle_main_section_h2">Jabón de limón y curcuma 100gr</h2>
+                <figure class="detalleFigureEstrellas"><img src="../imagenes/cincoestrellas-meraki.png"
+                        class="detalleImg"></figure>
+                <h2 class="detallePrecioH2">$260</h2>
+                <h4 class="detalle_main_section_h4">¿Qué son los jabones saponificados?</h4>
+                <p>Estos jabones corporales son elaborados a partir de la saponificación en frío, compuestos por aceites
+                    vegetales, pigmentos naturales y soda cáustica de máxima pureza.</p>
+                <h3>Beneficios</h3>
+                <ul>
+                    <li><img src="../imagenes/iconos-nutre-meraki.svg" alt="icono-nutre" class="detalleImg">Nutre</li>
+                    <li><img src="../imagenes/iconos-vitaliza-meraki.svg" alt="icono-vitaliza"
+                            class="detalleImg">Vitaliza</li>
+                    <li><img src="../imagenes/iconos-suaviza-meraki.svg" alt="icono-suaviza" class="detalleImg">Suaviza
+                    </li>
+                    <li><img src="../imagenes/iconos-eco-meraki.svg" alt="icono-ecología" class="detalleImg">Ecológico
+                    </li>
+                </ul>
+                <div class="detalle_div_form-flex">
+                    <form>
+                        <input type="number" id="form_input_numero" step="1" min="1" max="10" name="quantity" value="1"
+                            title="Cantidad" size="4" inputmode="numeric">
+                    </form>
+                    <a class="btn">Añadir al carrito</a>
+                </div>
+            </div>
+        </section>
+        <article class="detalle_main_article">
+            <h2>Procedimiento:</h2>
+            <h4>¿Qué es la saponificación?</h4>
+            <p>La saponificación es un proceso largo que requiere paciencia y cuidado. Este proceso químico se da
+                mediante la mezcla de una grasa (aceites vegetales) con un hidróxido (soda cáustica). Tras el
+                proceso, una vez extraídos del molde, los jabones requieren entre 4 y 6 semanas de “maduración”.
+                Este proceso es muy importante, pues en este tiempo posterior a la elaboración el jabón se endurece
+                y el secado ha de ser cuidadoso y hecho en un entorno climático idóneo, con la adecuada exposición
+                solar y un clima cálido y seco.
+                Las ventajas de las saponificación en frío es que el jabón elaborado en frío conserva las
+                propiedades naturales: son jabones mucho más suaves y delicados.</p>
+            <figure><img src="../imagenes/img_proceso-detalleproducto2.jpg" class="imgProceso">
+            </figure>
+        </article>
+        <section class="sectionResena margenes">
+            <h2>Dejanos tu opinión</h2>
+            <form>
+                <h5 class="detalle_form_h5">Nombre(s)</h5>
+                <input type="text" class="casilleroProducto" required>
+                <h5 class="detalle_form_h5">Correo electrónico</h5>
+                <input type="email" class="casilleroProducto" required>
+                <h5 class="detalle_form_h5">Título del comentario</h5>
+                <input type="text" class="casilleroProducto">
+                <h5 class="detalle_form_h5">Calificación</h5>
+                <figure class="detalle_form_figure"><img src="../imagenes/cincoestrellasvoto-meraki.png"
+                        alt="estrellas voto" class="detalleImg"></figure>
+                <h5 class="detalle_form_h5">Cuéntanos tu opinión sobre este producto</h5>
+                <textarea name="comentario" id="cajaResena">¡Escribe aquí tu reseña!</textarea>
+                <div class="detalle_form_div_input"><input type="submit" id="btnResena"></div>
+            </form>
+            <ul>
+                <li>
+                    <div class="sectionResena_ul_li_div">
+                        <h3>Daniela Soler</h3>
+                        <figure class="sectionResena_ul_li_div_figure"><img src="../imagenes/cincoestrellas-meraki.png"
+                                alt="voto cinco estrellas" class="detalleImgComentario"></figure>
+                    </div>
+                    <h4>¡Me encantó!</h4>
+                    <p>¡Me encantó! El nivel de detalle y belleza del jabón es increible. Definitivamente lo
+                        recomiendo te deja la piel super suave y fresca,
+                        además de que te deja un aroma riquísimo!</p>
+                </li>
+                <li>
+                    <div class="sectionResena_ul_li_div">
+                        <h3>Lucia Moreno</h3>
+                        <figure class="sectionResena_ul_li_div_figure"><img src="../imagenes/cincoestrellas-meraki.png"
+                                alt="voto cinco estrellas" class="detalleImgComentario"></figure>
+                    </div>
+                    <h4>Mi jabón favorito</h4>
+                    <p>Super recomendado, es de mis jabones favoritos de Meraki! Realmente me sorprendió lo suave
+                        que te deja la piel y la presentación es impecable.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="./productos.html">PRODUCTOS</a></li>
+            <li><a href="./boxmeraki.html">¡BOX MERAKI!</a></li>
+            <li><a href="./sobrenosotros.html">MERAKI</a></li>
+            <li><a href="./iniciarsesion.html">INICIAR SESIÓN</a></li>
+            <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+        <ul>
+            <li class="footer_li-margin">REDES SOCIALES</li>
+            <li class="footer_ul_li-flex">
+                <a><img src="../imagenes/icono-facebook-meraki.png" alt="icono facebook" class="iconosFooter"></a>
+                <h6>Facebook</h6>
+            </li>
+            <li class="footer_ul_li-flex">
+                <a><img src="../imagenes/icono-intagram-meraki.png" alt="icono instagram" class="iconosFooter"></a>
+                <h6>Instagram</h6>
+            </li>
+            <li>
+                <img src="../imagenes/logo-meraki-soap.svg" alt="logotipo meraki" class="logoFooter">
+            </li>
+        </ul>
+        <ul>
+            <li class="footer_li-margin">CONTACTO</li>
+            <li class="footer_ul_li-flex">
+                <a><img src="../imagenes/icono-mensajecorreo-meraki.png" alt="icono correo" class="iconosFooter"></a>
+                <h6>meraki.soap@gmail.com</h6>
+            </li>
+            <li class="footer_ul_li-flex">
+                <a><img src="../imagenes/icono-ubicación-meraki.png" alt="icono ubicación" class="iconosFooter"></a>
+                <h6>Mar del Plata, Argentina</h6>
+            </li>
+            <li class="footer_ul_li-flex">
+                <a><img src="../imagenes/icono-telefono-meraki.png" alt="icono telefono" class="iconosFooter"></a>
+                <h6>2236357065</h6>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
