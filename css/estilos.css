@@ -183,12 +183,13 @@ footer ul li h6 {
 }
 
 .footer_li-margin {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer_ul_li-flex a {
     width: 20%;
 }
+
 /*------------ css INDEX  mobile ---------*/
 .imgFondo {
     background-image: url(../imagenes/imgindexinicio2.jpg);
@@ -286,7 +287,7 @@ footer ul li h6 {
 
 .section_ul_li_div {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1rem 1.5rem;
     align-items: center;
     text-align: left;
@@ -402,9 +403,10 @@ footer ul li h6 {
 
 /*---------------- GRID -------------------*/
 .productos_section-margenes {
-padding: 1rem 2.5rem;
+    padding: 1rem 2.5rem;
 
 }
+
 .productos_section_ul-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
@@ -1133,6 +1135,33 @@ padding: 1rem 2.5rem;
     max-width: 100%;
 }
 
+/*--------------- TAMAÑO 480px -------------*/
+@media screen and (min-width: 30em) {
+
+    /*--------HEADER buscador 480px-------*/
+    .cajaBuscador {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buscador {
+     margin-left: 0em;
+    }
+    .iconoLupa {
+        position: initial;
+    margin-top: 0.5rem;
+    }
+    /*----------------FOOTER 480px------------------*/
+    .footer_ul_li-flex{
+        align-items: center;
+    }
+    /*----------------INDEX 480px-------------------*/
+    .section_ul_li_div {
+        justify-content: space-evenly;
+    }
+
+}
+
 /*--------------- TAMAÑO LAPTOP 1200px -------------*/
 @media screen and (min-width: 75em) {
 
@@ -1175,22 +1204,24 @@ padding: 1rem 2.5rem;
     .navBar nav {
         width: 90%;
     }
- /*-------------  FOOTER 1200px -------------*/
+
+    /*-------------  FOOTER 1200px -------------*/
     footer {
         display: flex;
         justify-content: space-between;
         padding: 2rem 5rem;
     }
+
     footer ul {
         width: 30%;
         margin-bottom: 2rem;
     }
-    
-    .footer_ul_li-flex a{
-        width: 15%; 
+
+    .footer_ul_li-flex a {
+        width: 15%;
     }
 
- /*-------------  INDEX 1200px -------------*/
+    /*-------------  INDEX 1200px -------------*/
     .imgFondo {
         background-image: url(../imagenes/imgindexinicio.jpg);
         min-height: 585px;
@@ -1220,15 +1251,18 @@ padding: 1rem 2.5rem;
         text-align: left;
         padding: 0rem 3.5rem;
     }
+
     .main_section {
-    margin: 1rem 2.5rem;
+        margin: 1rem 2.5rem;
     }
-    .index_main_section_h2{
+
+    .index_main_section_h2 {
         font-size: 5.0rem;
     }
+
     .indexP {
         font-size: 1.8rem;
-        padding-top: 1rem ;
+        padding-top: 1rem;
     }
 
     .section_ul-flex {
@@ -1236,10 +1270,14 @@ padding: 1rem 2.5rem;
         margin: 1.5rem 0rem;
     }
 
-    .article_ul-flex{
-    justify-content: center;
+    .article_ul-flex {
+        justify-content: center;
     }
+
     .article_ul_li {
         width: 16%;
+    }
+    .section_ul_li_div {
+        justify-content: center;
     }
 }
