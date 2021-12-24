@@ -903,7 +903,7 @@ footer ul li h6 {
 .imgProceso {
     width: 100%;
     max-width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 #form_input_numero {
@@ -1030,7 +1030,7 @@ footer ul li h6 {
     padding-bottom: 2rem;
 }
 
-.sectionResena h2 {
+.detalleproducto_form h2 {
     font-size: 3.0rem;
     color: #FF661F;
     padding-top: 1.5rem;
@@ -1089,22 +1089,22 @@ footer ul li h6 {
     text-align: center;
 }
 
-.sectionResena ul {
+.detalle_producto_section_formUl ul {
     margin-bottom: 3rem;
 }
 
-.sectionResena ul li {
+.detalle_producto_section_formUl ul li {
     margin-bottom: 2rem;
 }
 
-.sectionResena ul li h4 {
+.detalle_producto_section_formUl ul li h4 {
     font-weight: 700;
     font-size: 1.8rem;
     color: #794100;
     margin-bottom: 1rem;
 }
 
-.sectionResena ul li p {
+.detalle_producto_section_formUl ul li p {
     background-color: #FFF8F0;
     box-shadow: 0px 0px 10px #707070;
     padding: 1rem;
@@ -1199,6 +1199,14 @@ footer ul li h6 {
         width: 100%;
     }
 
+    /*----------DETALLE DE PRODUCTO 480px-------------*/
+    .detalle_main_article {
+        padding: 2rem;
+    }
+
+    .sectionResena ul {
+        margin-top: 3rem;
+    }
 }
 
 /*--------------- TAMAÑO TABLETAS 768px -------------------------*/
@@ -1387,6 +1395,43 @@ footer ul li h6 {
         margin: 8.5rem 0rem 0rem 1.7rem;
     }
 
+    /*----------DETALLE DE PRODUCTO 768px-------------*/
+    .margenes {
+        padding: 2rem 4.5rem;
+    }
+
+    .detalle_main_section_div_div a {
+        font-size: 2.0rem;
+    }
+
+    .detalle_main_section ul {
+        margin-bottom: 3rem;
+    }
+
+    .detalle_main_section ul li {
+        width: 30%;
+    }
+
+    .detalle_div_form-flex {
+        justify-content: center;
+    }
+
+    .detalle_main_article {
+        margin: 2rem 4.5rem;
+        padding: 4.5rem;
+    }
+
+    .detalle_main_article p {
+        line-height: 3rem;
+    }
+    /*----------------INICIA SESION 768px--------------*/
+    #iniciarSesion_main_section{
+        display: flex;
+    justify-content: center;
+    }
+    .iniciarSesion_main_section_form{
+        width: 60%;
+    }
 }
 
 /*--------------- TAMAÑO LAPTOP 1200px ------------------*/
@@ -1672,5 +1717,126 @@ footer ul li h6 {
     .meraki_main_article_p {
         margin: 8.5rem 0rem 0rem 0rem;
         font-size: 1.8rem;
+    }
+
+    /*-------------DETALLE DE PRODUCTO 1200px------------------*/
+    .detalle_main_section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .detalle_main_section_divEspecificaciones {
+        width: 130%;
+        padding-left: 3rem;
+        padding-top: 4rem;
+        padding-right: 2rem;
+    }
+
+    .detalle-marginBottom {
+        margin-bottom: 0.5rem;
+    }
+
+    .detalleFigureEstrellas {
+        width: 30%;
+    }
+
+    .detalle_main_section_divEspecificaciones p {
+        margin-bottom: 1.5rem;
+    }
+
+    .detalle_main_section ul {
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    }
+
+    .detalle_main_section ul li {
+        width: 18%;
+        margin: 1rem;
+    }
+
+    .detalle_main_section_div_figureDos {
+        width: 60%;
+    }
+
+    .detalle_main_article {
+        display: flex;
+    }
+
+    .detalle_main_article_contenedor {
+        width: 50%;
+        padding-right: 4rem;
+    }
+
+    .detalle_main_article h4 {
+        font-size: 2.0rem;
+    }
+
+    .detalle_main_article {
+        margin: 3rem 18rem;
+        padding: 4rem;
+    }
+
+    .detalle_main_article figure {
+        width: 50%;
+    }
+
+    .detalle_producto_section_formUl {
+        display: flex;
+        border-top: solid 0.2rem #794100;
+        padding: 2rem 5rem 1rem 5rem;
+    }
+
+    .detalleproducto_form h2 {
+        border-top: transparent;
+    }
+
+    .detalle_producto_section_formUl ul {
+        width: 50%;
+        margin-bottom: 0rem;
+    }
+
+    .casilleroProducto {
+        width: 60%;
+    }
+
+    #cajaResena {
+        width: 75%;
+    }
+
+    .detalle_form_figure {
+        width: 35%;
+    }
+
+    .detalle_form_div_input {
+        text-align: start;
+    }
+
+    .detalle_producto_section_formUl ul li {
+        margin-bottom: 6rem;
+    }
+
+    .sectionResena_ul_li_div h3 {
+        font-size: 3.0rem;
+    }
+
+    .detalle_producto_section_formUl ul li p {
+        font-size: 1.8rem;
+        padding: 2rem;
+        line-height: 3.5rem;
+    }
+    /*---------------- INICIAR SESION 1200px-----------------*/
+    .iniciarSesion_main_section_form{
+        padding: 0rem 5rem;
+    }
+    #iniciarSesion_main_section_form_h1{
+        font-size: 5.5rem;
+        margin: 1rem 0rem;
+    }
+    .iniciarSesion_main_section_form_h4{
+        font-size: 2.0rem;
+    }
+    .iniciarSesion_main_section_form_h5 {
+        padding-bottom: 4rem;
+        font-size: 2.0rem;
     }
 }
