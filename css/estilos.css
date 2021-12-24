@@ -757,7 +757,7 @@ footer ul li h6 {
 .imgMerakiProductos {
     width: 100%;
     max-width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .meraki_main_section_h1 {
@@ -836,7 +836,6 @@ footer ul li h6 {
 
 .videoMedioAmbiente {
     width: 100%;
-    height: 100%;
     max-width: 100%;
     margin-bottom: 2.5rem;
 }
@@ -1188,6 +1187,18 @@ footer ul li h6 {
     .productos_main_section-backgroundImg {
         min-height: 262px;
     }
+
+    /*-----------SOBRE NOSOTROS 480px----------------*/
+    .sobreNostros_contenedor_h2_video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobreNosotros_div_iframe {
+        width: 100%;
+    }
+
 }
 
 /*--------------- TAMAÑO TABLETAS 768px -------------------------*/
@@ -1339,6 +1350,41 @@ footer ul li h6 {
     .productos_main_section_select {
         width: 80%;
         font-size: 2.0rem;
+    }
+
+    /*----------------sOBRE NOSOTROS 768px---------------*/
+    .meraki_main_section_p {
+        margin-top: 2rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .meraki_main_section_div-flex {
+        flex-direction: initial;
+        padding: 0rem 2.5rem 0rem 0rem;
+    }
+
+    .figureImgAriana {
+        justify-content: end;
+        width: 60%;
+    }
+
+    .main_section_div_div-backgroundNaranja {
+        align-self: end;
+        width: 30%;
+    }
+
+    .meraki_main_article {
+        display: flex;
+        justify-content: center;
+        padding: 0rem 5rem;
+    }
+
+    .meraki_main_article_p {
+        width: 40%;
+        padding-bottom: 0rem;
+        text-align: start;
+        margin: 8.5rem 0rem 0rem 1.7rem;
     }
 
 }
@@ -1549,33 +1595,82 @@ footer ul li h6 {
         min-height: 510px;
         text-align: right;
     }
-    .productos_a-padding{
+
+    .productos_a-padding {
         padding-right: 8rem;
     }
-    .productos_main_section_h1{
+
+    .productos_main_section_h1 {
         padding-right: 8rem;
     }
-    .productosSecciones{
+
+    .productosSecciones {
         flex-direction: row;
         margin: 2rem 0rem 2rem 3rem;
         text-align: start;
     }
+
     .productosSecciones a {
         background-color: transparent;
         box-shadow: none;
         font-size: 3.5rem;
         margin-right: 1.5rem;
     }
-    
+
     .productosSecciones_a {
         width: 70%;
         padding: 0.7rem 1.5rem;
     }
+
     .cajaFiltro {
         width: 30%;
     }
-    
+
     .productos_section-margenes {
         padding: 2rem 5rem;
+    }
+
+    /*----------------SOBRE NOSOTORS 1200px-----------------------*/
+    .merakiLogoNaranja {
+        width: 220px;
+    }
+
+    .meraki_main_section_h1 {
+        font-size: 2.0rem;
+    }
+
+    .meraki_main_section_p {
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+
+    .main_section_div_div-backgroundNaranja {
+        width: 25%;
+    }
+
+    .meraki_main_section_h2 {
+        font-size: 2.5rem;
+    }
+
+    .meraki_main_section_h3 {
+        font-size: 1.8rem;
+    }
+
+    .meraki_main_section_h4 {
+        font-size: 3.0rem;
+        margin: 3rem 0rem 5rem 0rem;
+    }
+
+    .meraki_main_article {
+        justify-content: space-around;
+    }
+
+    .sobreNostros_contenedor_h2_video {
+        width: 50%;
+    }
+
+    .meraki_main_article_p {
+        margin: 8.5rem 0rem 0rem 0rem;
+        font-size: 1.8rem;
     }
 }
