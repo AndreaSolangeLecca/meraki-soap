@@ -579,11 +579,11 @@ footer ul li h6 {
     margin-bottom: 1.5rem;
 }
 
-.contacto_main_section div {
+.contacto_main_section_div {
     padding: 0rem 2rem 1rem 2rem;
 }
 
-.contacto_main_section div ul {
+.contacto_main_section_div ul {
     display: flex;
 
 }
@@ -1179,6 +1179,7 @@ footer ul li h6 {
     .box_main_section-backgroundImg h1 {
         padding-top: 9rem;
     }
+
 }
 
 /*--------------- TAMAÑO TABLETAS 768px -------------------------*/
@@ -1244,6 +1245,7 @@ footer ul li h6 {
     .box_main_section-backgroundImg h1 {
         padding-top: 17rem;
     }
+
     .box_main_section-backgroundImg a {
         font-size: 2.2rem;
     }
@@ -1251,13 +1253,15 @@ footer ul li h6 {
     .box_main_section {
         margin: 3.5rem 0rem;
     }
+
     .box_section_ul_li_div_div {
         margin-bottom: 1.5rem;
     }
+
     .box_section_ul_li_div_div h3 {
         font-size: 2.2rem;
     }
-    
+
     .box_section_ul_li-fondoRosa {
         flex-direction: initial;
         margin: 3rem 4.5rem;
@@ -1288,6 +1292,23 @@ footer ul li h6 {
 
     .box_section_ul_li_div li {
         font-size: 1.8rem;
+    }
+
+    /*----------------CONTACTO 768px--------------*/
+    .contacto_main_section {
+        margin: 3rem 5rem;
+    }
+
+    .contacto_main_section_figure {
+        padding: 7rem 4rem 1rem 4rem;
+    }
+
+    .contacto_main_section_div {
+        padding: 0rem 5.5rem 1rem 5.5rem;
+    }
+
+    .contacto_main_section_form {
+        padding: 2rem 4.5rem 3rem 4.5rem;
     }
 }
 
@@ -1461,6 +1482,30 @@ footer ul li h6 {
 
     .box_section_ul_li-fondoNaranja figure {
         width: 45%;
+    }
+
+    /*----------------CONTACTO 1200px--------------*/
+    .contacto_main_section {
+        margin: 5rem 6rem;
+    }
+
+    .contacto_figure_info-flex {
+        display: flex;
+    }
+    .contacto_main_section_figure{
+        padding: 5rem 0rem;
+        margin: 0rem 0rem 0rem 5rem;
+        width: 80%;
+    }
+    .contacto_main_section_div {
+        padding-top: 3.5rem;
+    }
+    .contacto_main_section div ul li {
+        width: 15%;
+    }
+    .contacto_main_section_form{
+        width: 50%;
+        text-align: start;
     }
 
 }
