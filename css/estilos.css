@@ -1135,7 +1135,7 @@ footer ul li h6 {
     max-width: 100%;
 }
 
-/*--------------- TAMAÑO 480px -------------*/
+/*-------------------- TAMAÑO 480px -------------------*/
 @media screen and (min-width: 30em) {
 
     /*--------HEADER buscador 480px-------*/
@@ -1145,29 +1145,85 @@ footer ul li h6 {
     }
 
     .buscador {
-     margin-left: 0em;
+        margin-left: 0em;
     }
+
     .iconoLupa {
         position: initial;
-    margin-top: 0.5rem;
+        margin-top: 0.5rem;
     }
-    /*----------------FOOTER 480px------------------*/
-    .footer_ul_li-flex{
+
+    /*--------------FOOTER 480px------------*/
+    .footer_ul_li-flex {
         align-items: center;
     }
-    /*----------------INDEX 480px-------------------*/
+
+    /*--------------INDEX 480px--------------*/
     .section_ul_li_div {
         justify-content: space-evenly;
     }
+
     .imgFondo {
         min-height: 262px;
     }
+
     .imgFondo h1 {
         padding: 10rem 0rem;
     }
 }
 
-/*--------------- TAMAÑO LAPTOP 1200px -------------*/
+/*--------------- TAMAÑO TABLETAS 768px -------------------------*/
+@media screen and (min-width: 48em) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    /*-----------HEADER 768px---------*/
+    .hamburguesa {
+        left: 5rem;
+    }
+
+    .iconoUsuario {
+        margin-right: 4em;
+    }
+     /*-----------FOOTER 768px---------*/
+     footer {
+        padding: 2rem 5rem;
+     }
+     .footer_ul_li-flex a {
+        width: 18%;
+     }
+
+    /*----------INDEX 768px-----------*/
+    .imgFondo {
+        min-height: 436px;
+    }
+
+    .imgFondo h1 {
+        padding: 18rem 0rem;
+    }
+
+    .main_article {
+        margin: 3rem 4.5rem;
+    }
+
+    .section_ul-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section_ul_li {
+        width: 40%;
+    }
+    .article_ul-flex {
+        margin: 2rem 5rem 1.5rem 5rem;
+    }
+    .main_article {
+    background-color: #FFFED3;
+    }
+}
+
+/*--------------- TAMAÑO LAPTOP 1200px ------------------*/
 @media screen and (min-width: 75em) {
 
     /*------ HEADER 1200px -------*/
@@ -1233,7 +1289,7 @@ footer ul li h6 {
     }
 
     .imgFondo h1 {
-        padding: 25rem 0rem 0rem 0rem;
+        padding: 22rem 0rem 0rem 0rem;
     }
 
     .main_article {
@@ -1271,17 +1327,19 @@ footer ul li h6 {
     }
 
     .section_ul-flex {
-        display: flex;
         margin: 1.5rem 0rem;
+        flex-wrap: initial;
     }
 
     .article_ul-flex {
         justify-content: center;
+        margin: 2rem 2.5rem 1.5rem 2.5rem;
     }
 
     .article_ul_li {
         width: 16%;
     }
+
     .section_ul_li_div {
         justify-content: center;
     }
