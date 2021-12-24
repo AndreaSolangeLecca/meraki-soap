@@ -1180,6 +1180,14 @@ footer ul li h6 {
         padding-top: 9rem;
     }
 
+    /*----------------PRODUCTOS 480px--------------*/
+    .productosSecciones a {
+        width: 85.5%;
+    }
+
+    .productos_main_section-backgroundImg {
+        min-height: 262px;
+    }
 }
 
 /*--------------- TAMAÑO TABLETAS 768px -------------------------*/
@@ -1310,6 +1318,29 @@ footer ul li h6 {
     .contacto_main_section_form {
         padding: 2rem 4.5rem 3rem 4.5rem;
     }
+
+    /*--------------PRODUCTOS 768px--------------*/
+    .productos_main_section-backgroundImg {
+        min-height: 436px;
+    }
+
+    .productos_main_section-backgroundImg a {
+        font-size: 2.2rem;
+    }
+
+    .productos_main_section_h1 {
+        padding-top: 16rem;
+    }
+
+    .productosSecciones a {
+        width: 84%;
+    }
+
+    .productos_main_section_select {
+        width: 80%;
+        font-size: 2.0rem;
+    }
+
 }
 
 /*--------------- TAMAÑO LAPTOP 1200px ------------------*/
@@ -1492,20 +1523,59 @@ footer ul li h6 {
     .contacto_figure_info-flex {
         display: flex;
     }
-    .contacto_main_section_figure{
+
+    .contacto_main_section_figure {
         padding: 5rem 0rem;
         margin: 0rem 0rem 0rem 5rem;
         width: 80%;
     }
+
     .contacto_main_section_div {
         padding-top: 3.5rem;
     }
+
     .contacto_main_section div ul li {
         width: 15%;
     }
-    .contacto_main_section_form{
+
+    .contacto_main_section_form {
         width: 50%;
         text-align: start;
     }
 
+    /*--------------PRODUCTOS 1200px--------------*/
+    .productos_main_section-backgroundImg {
+        background-image: url(../imagenes/img-productos-inicio.jpg);
+        min-height: 510px;
+        text-align: right;
+    }
+    .productos_a-padding{
+        padding-right: 8rem;
+    }
+    .productos_main_section_h1{
+        padding-right: 8rem;
+    }
+    .productosSecciones{
+        flex-direction: row;
+        margin: 2rem 0rem 2rem 3rem;
+        text-align: start;
+    }
+    .productosSecciones a {
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 3.5rem;
+        margin-right: 1.5rem;
+    }
+    
+    .productosSecciones_a {
+        width: 70%;
+        padding: 0.7rem 1.5rem;
+    }
+    .cajaFiltro {
+        width: 30%;
+    }
+    
+    .productos_section-margenes {
+        padding: 2rem 5rem;
+    }
 }
