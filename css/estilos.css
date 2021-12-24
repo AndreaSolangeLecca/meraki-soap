@@ -1170,6 +1170,15 @@ footer ul li h6 {
     .imgFondo h1 {
         padding: 10rem 0rem;
     }
+
+    /*----------------BOX MERAKI 480px--------------*/
+    .box_main_section-backgroundImg {
+        min-height: 262px;
+    }
+
+    .box_main_section-backgroundImg h1 {
+        padding-top: 9rem;
+    }
 }
 
 /*--------------- TAMAÑO TABLETAS 768px -------------------------*/
@@ -1186,13 +1195,15 @@ footer ul li h6 {
     .iconoUsuario {
         margin-right: 4em;
     }
-     /*-----------FOOTER 768px---------*/
-     footer {
+
+    /*-----------FOOTER 768px---------*/
+    footer {
         padding: 2rem 5rem;
-     }
-     .footer_ul_li-flex a {
+    }
+
+    .footer_ul_li-flex a {
         width: 18%;
-     }
+    }
 
     /*----------INDEX 768px-----------*/
     .imgFondo {
@@ -1212,14 +1223,71 @@ footer ul li h6 {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .section_ul_li {
         width: 40%;
     }
+
     .article_ul-flex {
         margin: 2rem 5rem 1.5rem 5rem;
     }
+
     .main_article {
-    background-color: #FFFED3;
+        background-color: #FFFED3;
+    }
+
+    /*----------------BOX MERAKI 768px--------------*/
+    .box_main_section-backgroundImg {
+        min-height: 436px;
+    }
+
+    .box_main_section-backgroundImg h1 {
+        padding-top: 17rem;
+    }
+    .box_main_section-backgroundImg a {
+        font-size: 2.2rem;
+    }
+
+    .box_main_section {
+        margin: 3.5rem 0rem;
+    }
+    .box_section_ul_li_div_div {
+        margin-bottom: 1.5rem;
+    }
+    .box_section_ul_li_div_div h3 {
+        font-size: 2.2rem;
+    }
+    
+    .box_section_ul_li-fondoRosa {
+        flex-direction: initial;
+        margin: 3rem 4.5rem;
+    }
+
+    .box_section_ul_li-fondoNaranja {
+        flex-direction: row-reverse;
+        margin: 3rem 4.5rem;
+    }
+
+    .box_section_ul_li-fondoRosa figure {
+        width: 50%;
+    }
+
+    .box_section_ul_li-fondoNaranja figure {
+        width: 50%;
+    }
+
+    .box_section_ul_li_div {
+        width: 50%;
+        padding: 4rem 2.5rem 2.5rem 2.5rem;
+        align-self: center;
+    }
+
+    .box_section_ul_li_div ul {
+        line-height: 3rem;
+    }
+
+    .box_section_ul_li_div li {
+        font-size: 1.8rem;
     }
 }
 
@@ -1343,4 +1411,56 @@ footer ul li h6 {
     .section_ul_li_div {
         justify-content: center;
     }
+
+    /*--------------BOX MERAKI 1200px--------------*/
+    .box_main_section-backgroundImg {
+        background-image: url(../imagenes/img_boxmeraki-inicio.jpg);
+        min-height: 420px;
+    }
+
+    .box_main_section {
+        margin: 5rem 0rem;
+    }
+
+    .box_main_section ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box_section_ul_li-fondoRosa {
+        margin: 4rem 0rem;
+        width: 70%;
+    }
+
+    .box_section_ul_li-fondoNaranja {
+        margin: 4rem 0rem;
+        width: 70%;
+    }
+
+    .box_section_ul_li_div_div {
+        margin-bottom: 2.5rem;
+    }
+
+    .box_section_ul_li_div_div h3 {
+        font-size: 3.0rem;
+    }
+
+    .box_section_ul_li_div ul {
+        line-height: 3.8rem;
+        align-items: start;
+    }
+
+    .box_section_ul_li_div li {
+        font-size: 2.0rem;
+    }
+
+    .box_section_ul_li-fondoRosa figure {
+        width: 45%;
+    }
+
+    .box_section_ul_li-fondoNaranja figure {
+        width: 45%;
+    }
+
 }
