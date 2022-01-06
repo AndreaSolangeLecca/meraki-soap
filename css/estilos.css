@@ -253,6 +253,8 @@ footer ul li h6 {
     max-width: 100%;
     width: 80%;
     height: auto;
+    animation-iteration-count: infinite;
+    --animate-duration: 2s;
 }
 
 .section_ul_li {
@@ -323,7 +325,7 @@ footer ul li h6 {
 
 .main_articleDos {
     text-align: center;
-    background-color: #FFE5C7;
+    background: linear-gradient(100deg, rgb(255 249 244) 0%, rgb(255 227 194) 42%, rgb(255 219 177) 100%);
     padding: 0.1rem 0rem 3rem 0rem;
 }
 
@@ -344,6 +346,7 @@ footer ul li h6 {
     width: 100%;
     height: auto;
 }
+
 
 /*------------ css PRODUCTOS  mobile---------*/
 
@@ -655,7 +658,7 @@ footer ul li h6 {
 /*------------ css INICIAR SESIÓN  mobile---------*/
 
 #iniciarSesion_main_section {
-    background-color: #FFCBC8;
+    background: linear-gradient(0deg, rgba(255, 147, 141, 1) 0%, rgba(255, 203, 200, 1) 35%, rgba(255, 229, 199, 1) 100%);
     padding: 2rem 0rem;
 }
 
@@ -1424,12 +1427,14 @@ footer ul li h6 {
     .detalle_main_article p {
         line-height: 3rem;
     }
+
     /*----------------INICIA SESION 768px--------------*/
-    #iniciarSesion_main_section{
+    #iniciarSesion_main_section {
         display: flex;
-    justify-content: center;
+        justify-content: center;
     }
-    .iniciarSesion_main_section_form{
+
+    .iniciarSesion_main_section_form {
         width: 60%;
     }
 }
@@ -1559,8 +1564,15 @@ footer ul li h6 {
     .box_main_section-backgroundImg {
         background-image: url(../imagenes/img_boxmeraki-inicio.jpg);
         min-height: 420px;
+        text-align: left;
+    
     }
-
+    .box_main_section-backgroundImg h1{
+        padding-left: 8rem;
+    }
+    .primeraPagina {
+        padding-left: 8rem;
+    }
     .box_main_section {
         margin: 5rem 0rem;
     }
@@ -1824,17 +1836,21 @@ footer ul li h6 {
         padding: 2rem;
         line-height: 3.5rem;
     }
+
     /*---------------- INICIAR SESION 1200px-----------------*/
-    .iniciarSesion_main_section_form{
+    .iniciarSesion_main_section_form {
         padding: 0rem 5rem;
     }
-    #iniciarSesion_main_section_form_h1{
+
+    #iniciarSesion_main_section_form_h1 {
         font-size: 5.5rem;
         margin: 1rem 0rem;
     }
-    .iniciarSesion_main_section_form_h4{
+
+    .iniciarSesion_main_section_form_h4 {
         font-size: 2.0rem;
     }
+
     .iniciarSesion_main_section_form_h5 {
         padding-bottom: 4rem;
         font-size: 2.0rem;
