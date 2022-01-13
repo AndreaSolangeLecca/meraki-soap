@@ -31,6 +31,7 @@ p {
 
 p {
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 a {
@@ -39,7 +40,15 @@ a {
     text-decoration: none;
     font-size: 1.4rem;
 }
+/*--------------modificación de bootstrap-----------------*/
+figure {
+    margin: 0rem;
+}
 
+ul {
+    padding: 0;
+}
+/*--------------FIN modificación de bootstrap-----------------*/
 li {
     list-style: none;
 }
@@ -93,15 +102,16 @@ header {
 
 .cajaBuscador {
     padding-bottom: 1.5rem;
+    text-align: center;
 }
 
 .buscador {
     border-color: #ffffff;
     border-radius: 22px;
     border-style: solid;
-    margin: 0.5em 0 0 2.2em;
-    padding: 0.5em 1.5em;
-    width: 26rem;
+    margin: 0.9em 0 0 0em;
+    padding: 0.7em 2.2em;
+    width: 30.5rem;
     background-color: transparent;
     position: relative;
 }
@@ -118,8 +128,8 @@ header {
     max-width: 100%;
     width: 20px;
     position: absolute;
-    margin-top: 1.2rem;
-    margin-left: -3.3rem;
+    margin-top: 1.45rem;
+    margin-left: -3.2rem;
     height: auto;
 }
 
@@ -179,7 +189,8 @@ footer ul li h6 {
 
 .footer_ul_li-flex {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
 }
 
 .footer_li-margin {
@@ -260,7 +271,7 @@ footer ul li h6 {
 .section_ul_li {
     display: flex;
     flex-direction: column;
-    margin: 2rem 2.5rem;
+    margin: 2rem 1.8rem;
     text-align: center;
     background-color: #ffffff;
     box-shadow: 0px 0px 10px #707070;
@@ -276,6 +287,8 @@ footer ul li h6 {
     font-size: 2.0rem;
     margin-left: 1.5rem;
     margin-top: 1rem;
+    /*modificacion de bootstrap*/
+    font-weight: 700;
 }
 
 .indexP {
@@ -314,7 +327,7 @@ footer ul li h6 {
     margin-bottom: 1.5rem;
 }
 
-.btn {
+.botones_meraki {
     display: inline-block;
     background-color: #FF661F;
     padding: 0.9rem 2rem;
@@ -334,6 +347,8 @@ footer ul li h6 {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 2rem 2.5rem 1.5rem 2.5rem;
+    /*--------------modificación de bootstrap-----------------*/
+    padding: 0;
 }
 
 .article_ul_li {
@@ -375,15 +390,19 @@ footer ul li h6 {
 }
 
 .productosSecciones a {
+    display: block;
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
     color: #794100;
     font-size: 3.0rem;
     background-color: #FFF8F0;
     box-shadow: 0px 0px 10px #707070;
-    width: 82.5%;
+    width: 100%;
     margin-bottom: 2.5rem;
-    padding: 0.7rem;
+    padding: 1rem;
+}
+.productosSecciones_div :hover {
+    color: #FF661F;
 }
 
 #pagSeleccionada {
@@ -412,7 +431,7 @@ footer ul li h6 {
 
 .productos_section_ul-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
     grid-column-gap: 2.5rem;
     grid-row-gap: 2.5rem;
 }
@@ -592,8 +611,8 @@ footer ul li h6 {
 }
 
 .contacto_main_section div ul li {
-    width: 20%;
-    padding: 2rem 2rem 0rem 0rem;
+    width: 25%;
+    padding: 1.5rem 2rem 0rem 0rem;
 }
 
 .contactoIconos {
@@ -622,7 +641,7 @@ footer ul li h6 {
     border-style: solid;
     border-width: 1.5px;
     margin-bottom: 2rem;
-    width: 95.5%;
+    width: 100%;
     padding: 0.7rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
@@ -712,7 +731,7 @@ footer ul li h6 {
 
 .btnIngresar {
     background-color: #FF661F;
-    padding: 0.9rem 3rem;
+    padding: 0.9rem 5rem;
     margin-bottom: 1.5rem;
     font-size: 2.0rem;
     font-weight: 700;
@@ -720,7 +739,7 @@ footer ul li h6 {
 
 .btnRegistrate {
     background-color: #794100;
-    padding: 0.9rem 2rem;
+    padding: 0.9rem 4rem;
     margin-bottom: 1.5rem;
     font-size: 2.0rem;
     font-weight: 700;
@@ -1046,6 +1065,7 @@ footer ul li h6 {
     font-weight: 600;
     color: #794100;
     margin-bottom: 1rem;
+    line-height: 3rem;
 }
 
 .casilleroProducto {
@@ -1053,7 +1073,7 @@ footer ul li h6 {
     border-style: solid;
     border-width: 1.5px;
     margin-bottom: 2rem;
-    width: 95.5%;
+    width: 100%;
     padding: 0.7rem;
 }
 
@@ -1072,7 +1092,7 @@ footer ul li h6 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
-    width: 97%;
+    width: 100%;
     height: 7rem;
 }
 
@@ -1080,7 +1100,7 @@ footer ul li h6 {
     display: inline-block;
     background-color: #FF661F;
     padding: 0.9rem 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
     font-size: 2.0rem;
     color: #ffffff;
     font-weight: 700;
@@ -1183,10 +1203,7 @@ footer ul li h6 {
     }
 
     /*----------------PRODUCTOS 480px--------------*/
-    .productosSecciones a {
-        width: 85.5%;
-    }
-
+    
     .productos_main_section-backgroundImg {
         min-height: 262px;
     }
@@ -1352,10 +1369,6 @@ footer ul li h6 {
 
     .productos_main_section_h1 {
         padding-top: 16rem;
-    }
-
-    .productosSecciones a {
-        width: 84%;
     }
 
     .productos_main_section_select {
@@ -1565,14 +1578,17 @@ footer ul li h6 {
         background-image: url(../imagenes/img_boxmeraki-inicio.jpg);
         min-height: 420px;
         text-align: left;
-    
+
     }
-    .box_main_section-backgroundImg h1{
+
+    .box_main_section-backgroundImg h1 {
         padding-left: 8rem;
     }
+
     .primeraPagina {
         padding-left: 8rem;
     }
+
     .box_main_section {
         margin: 5rem 0rem;
     }
@@ -1649,7 +1665,7 @@ footer ul li h6 {
     /*--------------PRODUCTOS 1200px--------------*/
     .productos_main_section-backgroundImg {
         background-image: url(../imagenes/img-productos-inicio.jpg);
-        min-height: 510px;
+        min-height: 463px;
         text-align: right;
     }
 
@@ -1663,8 +1679,10 @@ footer ul li h6 {
 
     .productosSecciones {
         flex-direction: row;
-        margin: 2rem 0rem 2rem 3rem;
+        margin: 0rem 0rem 2rem 0rem;
+        padding: 2rem 4rem;
         text-align: start;
+        box-shadow: 0px 0px 10px #707070;
     }
 
     .productosSecciones a {
@@ -1672,6 +1690,7 @@ footer ul li h6 {
         box-shadow: none;
         font-size: 3.5rem;
         margin-right: 1.5rem;
+        display: initial;
     }
 
     .productosSecciones_a {
