@@ -67,7 +67,9 @@ header {
     z-index: 9990;
     box-shadow: 0px 0px 10px #707070;
 }
-
+.nav ul{
+    display: none;
+}
 .navBar {
     display: flex;
     justify-content: end;
@@ -96,14 +98,15 @@ header {
 .bntMenu {
     background: transparent;
     border: transparent;
+    position: fixed;
+    top: 2rem;
+    left: 3rem;
 }
 
 .hamburguesa {
     color: #794100;
-    top: 2rem;
-    left: 2.5rem;
-    position: fixed;
     font-size: 3.5rem;
+    z-index: 9990;
 }
 
 .cajaBuscador {
@@ -137,10 +140,6 @@ header {
     margin-top: 1.45rem;
     margin-left: -3.2rem;
     height: auto;
-}
-
-.nav ul {
-    display: none;
 }
 
 .iconoCarrito {
@@ -1492,6 +1491,10 @@ footer ul li h6 {
         font-weight: 700;
         font-size: 1.6rem;
     }
+/*----------------modificación bootstrap-----------------------*/
+    .nav ul {
+        display: flex;
+    }
 
     .nav ul li {
         margin-left: 2.5rem;
@@ -1503,10 +1506,6 @@ footer ul li h6 {
 
     .bntMenu {
         display: none;
-    }
-
-    .nav ul {
-        display: flex;
     }
 
     .navBar {
