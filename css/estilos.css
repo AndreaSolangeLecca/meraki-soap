@@ -67,9 +67,31 @@ header {
     z-index: 9990;
     box-shadow: 0px 0px 10px #707070;
 }
+/*------------- PRUEBA HEADER SIN BOOTSTRAP------------
 .nav ul{
     display: none;
 }
+---------------*/
+
+/*---------------------PRUEBA HEADER CON BOOTSTRAP---------------------*/
+.navbar-collapse{
+    position: absolute;
+    top: 12.9rem;
+    left: 0rem;
+}
+.navbar-collapse .navbar-nav{
+    padding: 4.2rem 10rem;
+    background-color: rgba(243, 243, 243, 0.877);
+}
+.nav-item .nav-link {
+    color: #FF661F;
+    font-weight: 700;
+    padding: 1rem 0rem;
+}
+.navbar-toggler{
+    padding: 0;
+}
+/*----------------FIN PRUEBA HEADER CON BOOTSTRAP---------------------*/
 .navBar {
     display: flex;
     justify-content: end;
@@ -1479,7 +1501,7 @@ footer ul li h6 {
     /*------ HEADER 1200px -------*/
     header {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         padding: 1rem;
     }
 
@@ -1487,11 +1509,7 @@ footer ul li h6 {
         font-size: 5.5rem;
     }
 
-    .nav_a {
-        font-weight: 700;
-        font-size: 1.6rem;
-    }
-/*----------------modificación bootstrap-----------------------*/
+  /*------------- PRUEBA HEADER SIN BOOTSTRAP----
     .nav ul {
         display: flex;
     }
@@ -1504,16 +1522,49 @@ footer ul li h6 {
         color: #794100;
     }
 
-    .bntMenu {
+        .nav_a {
+        font-weight: 700;
+        font-size: 1.6rem;
+    }
+    -------*/
+
+.bntMenu {
         display: none;
     }
 
     .navBar {
         width: 70%;
     }
+    /*----------PRUEBA HEADER CON BOOTSTRAP------------*/
+    .navbar-collapse .navbar-nav .nav-item{
+        margin-right: 2rem;
+    }
+    .navbar-collapse .navbar-nav .nav-item :hover {
+        color: #794100;
+    }
+    .navbar-collapse .navbar-nav {
+        padding: 0;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-collapse .nav-item .nav-link {
+        color: #ffffff;
+        font-size: 1.6rem;
+    }
 
     .navBar nav {
         width: 90%;
+    }
+    .navbar-collapse{
+        display: flex!important;
+        flex-basis: auto;
+    }
+ /*---------------MODIFICACIÓN HEADER CON BOOTSTRAP---------*/
+    .navbar-collapse{
+        position: relative;
+        top: 0rem;
+        left: 0rem;
     }
 
     .logoMerakiHeader {
