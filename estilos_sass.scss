@@ -83,7 +83,7 @@ footer ul li {
 
 footer ul li h6 {
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-left: 1.8rem;
 }
 
@@ -101,7 +101,7 @@ footer ul li h6 {
 
 .footer_ul_li-flex {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 1.5rem;
 }
 
@@ -529,7 +529,7 @@ footer ul li h6 {
 .contactoIconos {
     width: 100%;
     max-width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .contacto_main_section_form {
@@ -1087,8 +1087,9 @@ footer ul li h6 {
     }
 
     /*--------------FOOTER 480px------------*/
-    .footer_ul_li-flex {
-        align-items: center;
+    
+    footer ul li h6 {
+        font-size: 1.8rem;
     }
 
     /*--------------INDEX 480px--------------*/
