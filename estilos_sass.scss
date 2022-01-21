@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/*---- 1rem=10px para medidas rem---*/
+/*------1rem=10px para medidas rem ------*/
 html {
     font-size: 62.5%;
 }
@@ -39,10 +39,16 @@ p {
 }
 
 a {
-    font-family: 'Montserrat', sans-serif;
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 1.4rem;
+    }
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.4rem;
+}
+
+li {
+    list-style: none;
 }
 
 /*--------------modificación de bootstrap-----------------*/
@@ -55,129 +61,8 @@ ul {
 }
 
 /*--------------FIN modificación de bootstrap-----------------*/
-li {
-    list-style: none;
-}
 
-/*------------- HEADER mobile ------------*/
-header {
-    background-color: #F3C188;
-    position: sticky;
-    top: 0;
-    z-index: 9990;
-    box-shadow: 0px 0px 10px #707070;
-}
-/*------------- PRUEBA HEADER SIN BOOTSTRAP------------
-.nav ul{
-    display: none;
-}
----------------*/
-
-/*---------------------PRUEBA HEADER CON BOOTSTRAP---------------------*/
-.navbar-collapse{
-    position: absolute;
-    top: 12.9rem;
-    left: 0rem;
-}
-.navbar-collapse .navbar-nav{
-    padding: 4.2rem 10rem;
-    background-color: rgba(243, 243, 243, 0.877);
-}
-.nav-item .nav-link {
-    color: #FF661F;
-    font-weight: 700;
-    padding: 1rem 0rem;
-}
-.navbar-toggler{
-    padding: 0;
-}
-/*----------------FIN PRUEBA HEADER CON BOOTSTRAP---------------------*/
-.navBar {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-top: 0.5rem;
-}
-
-.navBar figure {
-    width: 45%;
-    text-align: center;
-}
-
-.logoMerakiHeader {
-    max-width: 100%;
-    width: 13rem;
-    height: auto;
-    padding-top: 1.4rem;
-
-}
-
-.header_div_a {
-    width: 15%;
-    text-align: end;
-}
-
-.bntMenu {
-    background: transparent;
-    border: transparent;
-    position: fixed;
-    top: 2rem;
-    left: 3rem;
-}
-
-.hamburguesa {
-    color: #794100;
-    font-size: 3.5rem;
-    z-index: 9990;
-}
-
-.cajaBuscador {
-    padding-bottom: 1.5rem;
-    text-align: center;
-}
-
-.buscador {
-    border-color: #ffffff;
-    border-radius: 22px;
-    border-style: solid;
-    margin: 0.9em 0 0 0em;
-    padding: 0.7em 2.2em;
-    width: 30.5rem;
-    background-color: transparent;
-    position: relative;
-}
-
-.buscador::placeholder {
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-
-}
-
-.iconoLupa {
-    max-width: 100%;
-    width: 20px;
-    position: absolute;
-    margin-top: 1.45rem;
-    margin-left: -3.2rem;
-    height: auto;
-}
-
-.iconoCarrito {
-    margin-right: 1em;
-    max-width: 100%;
-    width: 30px;
-    height: auto;
-}
-
-.iconoUsuario {
-    margin-right: 2.8em;
-    max-width: 100%;
-    width: 20px;
-    height: auto;
-}
-
+@import "header";
 /*------------- FOOTER  mobile ------------*/
 footer {
     background-color: #F3C188;
@@ -365,7 +250,7 @@ footer ul li h6 {
 
 .main_articleDos {
     text-align: center;
-    background: linear-gradient(100deg, rgb(255 249 244) 0%, rgb(255 227 194) 42%, rgb(255 219 177) 100%);
+    background-color: #FFE5C6;
     padding: 0.1rem 0rem 3rem 0rem;
 }
 
@@ -388,7 +273,6 @@ footer ul li h6 {
     width: 100%;
     height: auto;
 }
-
 
 /*------------ css PRODUCTOS  mobile---------*/
 
@@ -449,7 +333,6 @@ footer ul li h6 {
     font-weight: 700;
     width: 70%;
 }
-
 
 /*---------------- GRID -------------------*/
 .productos_section-margenes {
@@ -1255,6 +1138,7 @@ footer ul li h6 {
     .sectionResena ul {
         margin-top: 3rem;
     }
+
 }
 
 /*--------------- TAMAÑO TABLETAS 768px -------------------------*/
@@ -1328,7 +1212,8 @@ footer ul li h6 {
     .box_main_section {
         margin: 3.5rem 0rem;
     }
-    .box_section_ul_li_div{
+
+    .box_section_ul_li_div {
         text-align: start;
     }
 
@@ -1415,7 +1300,7 @@ footer ul li h6 {
         padding: 1rem 5rem;
     }
 
-    /*----------------sOBRE NOSOTROS 768px---------------*/
+    /*----------------SOBRE NOSOTROS 768px---------------*/
     .meraki_main_section_p {
         margin-top: 2rem;
         margin-left: 2.5rem;
@@ -1493,6 +1378,7 @@ footer ul li h6 {
     .iniciarSesion_main_section_form {
         width: 60%;
     }
+
 }
 
 /*--------------- TAMAÑO LAPTOP 1200px ------------------*/
@@ -1509,45 +1395,30 @@ footer ul li h6 {
         font-size: 5.5rem;
     }
 
-  /*------------- PRUEBA HEADER SIN BOOTSTRAP----
-    .nav ul {
-        display: flex;
-    }
-
-    .nav ul li {
-        margin-left: 2.5rem;
-    }
-
-    .nav ul li :hover {
-        color: #794100;
-    }
-
-        .nav_a {
-        font-weight: 700;
-        font-size: 1.6rem;
-    }
-    -------*/
-
-.bntMenu {
+    .bntMenu {
         display: none;
     }
 
     .navBar {
         width: 70%;
     }
-    /*----------PRUEBA HEADER CON BOOTSTRAP------------*/
-    .navbar-collapse .navbar-nav .nav-item{
+
+    /*----------HEADER CON BOOTSTRAP------------*/
+    .navbar-collapse .navbar-nav .nav-item {
         margin-right: 2rem;
     }
+
     .navbar-collapse .navbar-nav .nav-item :hover {
         color: #794100;
     }
+
     .navbar-collapse .navbar-nav {
         padding: 0;
         background-color: transparent;
         display: flex;
         flex-direction: row;
     }
+
     .navbar-collapse .nav-item .nav-link {
         color: #ffffff;
         font-size: 1.6rem;
@@ -1556,12 +1427,14 @@ footer ul li h6 {
     .navBar nav {
         width: 90%;
     }
-    .navbar-collapse{
-        display: flex!important;
+
+    .navbar-collapse {
+        display: flex !important;
         flex-basis: auto;
     }
- /*---------------MODIFICACIÓN HEADER CON BOOTSTRAP---------*/
-    .navbar-collapse{
+
+    /*---------------MODIFICACIÓN HEADER CON BOOTSTRAP---------*/
+    .navbar-collapse {
         position: relative;
         top: 0rem;
         left: 0rem;
@@ -1789,9 +1662,11 @@ footer ul li h6 {
     .productos_section-margenes {
         padding: 2rem 5rem;
     }
+
     .productos_main_section_select {
         margin-left: 5.5rem;
     }
+
     /*----------------SOBRE NOSOTORS 1200px-----------------------*/
     .merakiLogoNaranja {
         width: 220px;
@@ -1841,7 +1716,7 @@ footer ul li h6 {
         display: flex;
         flex-direction: row;
     }
-   
+
     .detalle_main_section_divEspecificaciones {
         width: 130%;
         padding-left: 3rem;
@@ -1849,7 +1724,7 @@ footer ul li h6 {
         padding-right: 2rem;
     }
 
-    .detalle_main_section_div_div{
+    .detalle_main_section_div_div {
         padding-left: 2.5rem;
     }
 
@@ -1964,4 +1839,5 @@ footer ul li h6 {
         padding-bottom: 4rem;
         font-size: 2.0rem;
     }
+
 }

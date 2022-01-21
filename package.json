@@ -1,0 +1,24 @@
+{
+  "name": "meraki-andrea-lecca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss estilos_sass.scss css_sass/estilos_sass.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaSolangeLecca/meraki-soap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaSolangeLecca/meraki-soap/issues"
+  },
+  "homepage": "https://github.com/AndreaSolangeLecca/meraki-soap#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
