@@ -1,3 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*------1rem=10px para medidas rem ------*/
+html {
+    font-size: 62.5%;
+}
+
+/* tamaño pantalla mobile 360px*/
+h1 {
+    font-size: 3.5rem;
+}
+
+h1,
+h2,
+h3 {
+    font: {
+        family: 'DM Serif Display', serif;
+        weight: 400;
+    }
+}
+
+h4,
+h5,
+h6,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    vertical-align: initial;
+}
+
+p {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+a {
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 1.4rem;
+    }
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*--------------modificación de bootstrap-----------------*/
+figure {
+    margin: 0rem;
+}
+
+ul {
+    padding: 0;
+}
+/*--------------FIN modificación de bootstrap-----------------*/
+
 /*------------- HEADER mobile ------------*/
 header {
     background-color: #F3C188;

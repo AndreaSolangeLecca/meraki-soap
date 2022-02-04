@@ -1,0 +1,69 @@
+/*------------- FOOTER  mobile ------------*/
+footer {
+    background-color: #F3C188;
+    color: #ffffff;
+    padding: 2rem 3rem;
+}
+
+footer {
+    ul {
+        line-height: 4rem;
+        margin-bottom: 5.5rem;
+    }
+}
+
+footer {
+    ul {
+        li {
+            font: {
+                family: 'Montserrat', sans-serif;
+                size: 1.8rem;
+                weight: 700;
+            }
+        }
+    }
+}
+
+footer {
+    ul {
+        li {
+            h6 {
+                font: {
+                    weight: 700;
+                    size: 1.6rem;
+                }
+
+                margin-left: 1.8rem;
+            }
+        }
+    }
+}
+
+.iconosFooter {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.logoFooter {
+    max-width: 100%;
+    width: 100px;
+    height: auto;
+}
+
+.footer_ul_li-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer_li-margin {
+    margin-bottom: 1.5rem;
+}
+
+.footer_ul_li-flex {
+    a {
+        width: 20%;
+    }
+}
+

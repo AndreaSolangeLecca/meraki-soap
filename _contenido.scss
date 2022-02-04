@@ -1,0 +1,2011 @@
+/*------------ css INDEX  mobile ---------*/
+.imgFondo {
+    background: {
+        image: url(../imagenes/imgindexinicio2.jpg);
+        repeat: no-repeat;
+        size: 100%;
+    }
+
+    max-width: 100%;
+    width: 100%;
+    min-height: 224px;
+
+    h1 {
+        color: #ffffff;
+        text-align: center;
+        padding: 8rem 0rem;
+    }
+}
+
+.main_article {
+    margin: 1rem 2.5rem;
+
+    div {
+        background-color: #FFFED3;
+        padding: 0.1rem 1.3rem 1rem 1.3rem;
+        text-align: center;
+    }
+}
+
+.main_section {
+    margin-bottom: 4rem;
+}
+
+.indexH2 {
+    color: #FF661F;
+    font-size: 3.0rem;
+    text-align: center;
+    margin: 3rem 2.5rem 1rem 2.5rem;
+    line-height: 3.5rem;
+}
+
+.main_article_figure_img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.main_article {
+    div {
+        p {
+            text-align: center;
+            color: #794100;
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.indexImg {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.indexIlus {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    animation-iteration-count: infinite;
+    --animate-duration: 2s;
+}
+
+.section_ul_li {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1.8rem;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #707070;
+}
+
+.section_ul_li_figure {
+    position: relative;
+}
+
+.section_ul_li {
+    h6 {
+        position: absolute;
+        color: #ffffff;
+        font-size: 2.0rem;
+
+        margin: {
+            left: 1.5rem;
+            top: 1rem;
+        }
+
+        /*modificacion de bootstrap*/
+        font-weight: 700;
+    }
+}
+
+.indexP {
+    margin: 0rem 2.5rem;
+    color: #794100;
+
+    font: {
+        weight: 700;
+        size: 1.6rem;
+    }
+
+    text-align: center;
+    line-height: 2rem;
+}
+
+.section_ul_li_div {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    align-items: center;
+    text-align: left;
+
+    figure {
+        width: 30%;
+    }
+}
+
+.section_ul_li_div {
+    h4 {
+        font: {
+            family: 'DM Serif Display', serif;
+            weight: 400;
+            size: 2.2rem;
+        }
+
+        margin-bottom: 0.5rem;
+        color: #FF661F;
+    }
+}
+
+.section_ul_li_div {
+    h5 {
+        font: {
+            weight: 600;
+            size: 1.4rem;
+        }
+
+        color: #794100;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.botones_meraki {
+    display: inline-block;
+    background-color: #FF661F;
+    padding: 0.9rem 2rem;
+    margin-bottom: 1.5rem;
+
+    font: {
+        size: 2.0rem;
+        weight: 700;
+    }
+}
+
+.main_articleDos {
+    text-align: center;
+    background-color: #FFE5C6;
+    padding: 0.1rem 0rem 3rem 0rem;
+}
+
+.article_ul-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 2.5rem 1.5rem 2.5rem;
+    /*--------------modificación de bootstrap-----------------*/
+    padding: 0;
+}
+
+.article_ul_li {
+    width: 47%;
+    margin-bottom: 1.8rem;
+}
+
+.article_ul_img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/*------------ css PRODUCTOS  mobile---------*/
+
+.productos_main_section-backgroundImg {
+    background: {
+        image: url(../imagenes/img-productos-inicio-2.jpg);
+        repeat: no-repeat;
+        size: 100%;
+    }
+
+    max-width: 100%;
+    width: 100%;
+    min-height: 215px;
+    text-align: center;
+}
+
+.productos_main_section_h1 {
+    color: #ffffff;
+    padding-top: 10rem;
+}
+
+.productosSecciones {
+    display: flex;
+    flex-direction: column;
+    line-height: 5rem;
+    text-align: center;
+    align-items: center;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.productosSecciones {
+    a {
+        display: block;
+
+        font : {
+            family: 'DM Serif Display', serif;
+            weight: 400;
+            size: 3.0rem;
+        }
+
+        color: #794100;
+        background-color: #FFF8F0;
+        box-shadow: 0px 0px 10px #707070;
+        width: 100%;
+        margin-bottom: 2.5rem;
+        padding: 1rem;
+    }
+}
+
+.productosSecciones_div {
+    &:hover {
+        color: #FF661F;
+    }
+}
+
+#pagSeleccionada {
+    color: #FF661F;
+    text-decoration: revert;
+}
+
+.productos_main_section_select {
+    border: {
+        color: #FF661F;
+        style: solid;
+        width: 2px;
+    }
+
+    padding: 0.5em;
+    color: #FF661F;
+
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 1.8rem;
+        weight: 700;
+    }
+
+    width: 70%;
+}
+
+/*---------------- GRID -------------------*/
+.productos_section-margenes {
+    padding: 1rem 2.5rem;
+
+}
+
+.productos_section_ul-grid {
+    display: grid;
+
+    grid: {
+        template-columns: repeat(auto-fill, minmax(305px, 1fr));
+        column-gap: 2.5rem;
+        row-gap: 2.5rem;
+    }
+}
+
+.productos_section_ul_li {
+    background-color: #FFF8F0;
+    box-shadow: 0px 0px 10px #707070;
+    margin-bottom: 2rem;
+}
+
+.productos_section_ul_li_figure {
+    display: flex;
+    justify-content: center;
+}
+
+.productos_section_ul_li_img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.productos_section_ul_ul {
+    padding: 1rem;
+}
+
+.productos_section_ul_ul_li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    figure {
+        width: 40%;
+    }
+}
+
+.productos_section_ul_ul_li {
+    h3 {
+        color: #FF661F;
+        font-size: 2.2rem;
+    }
+}
+
+.productos_section_ul_ul_li {
+    h4 {
+        color: #794100;
+
+        font: {
+            size: 1.6rem;
+            weight: 600;
+        }
+    }
+}
+
+.cajaBnt {
+    text-align: center;
+}
+
+/*------------ css BOX-MERAKI  mobile---------*/
+.box_main_section-backgroundImg {
+    background: {
+        image: url(../imagenes/img_boxmeraki-inicio2.jpg);
+        repeat: no-repeat;
+        size: 100%;
+    }
+
+    max-width: 100%;
+    width: 100%;
+    min-height: 230px;
+    text-align: center;
+
+    h1 {
+        color: #ffffff;
+        padding-top: 6rem;
+    }
+}
+
+.paginaActual {
+    font-weight: 700;
+}
+
+.box_main_section {
+    margin: 2rem 0rem;
+}
+
+.box_section_ul_li-fondoRosa {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2.5rem;
+    background-color: #FFEBEB;
+}
+
+.box_section_ul_li_img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.box_section_ul_li-fondoNaranja {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2.5rem;
+    background-color: #FFE9CE;
+}
+
+.box_section_ul_li_div {
+    padding: 1rem 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.box_section_ul_li_div_div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.box_section_ul_li_div_div {
+    h3 {
+        font-size: 1.8rem;
+        color: #794100;
+    }
+}
+
+.box_section_ul_li_div {
+    li {
+        font: {
+            family: 'Montserrat', sans-serif;
+            weight: 400;
+            size: 1.4rem;
+        }
+
+        color: #794100;
+    }
+}
+
+.box_section_ul_li_div {
+    ul {
+        line-height: 2rem;
+        text-align: start;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/*------------ css CONTACTO  mobile---------*/
+.contacto_main_section {
+    background-color: #FFFDC7;
+    box-shadow: 0px 0px 10px #707070;
+    margin: 2rem 2.5rem;
+    border-radius: 30px;
+}
+
+.contacto_main_section_figure {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    padding-top: 4rem;
+}
+
+.contacto_main_section_figure_img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 27px;
+}
+
+.contacto_main_section {
+    h1 {
+        color: #FF661F;
+    }
+}
+
+.contacto_main_section {
+    h3 {
+        font: {
+            family: 'Montserrat', sans-serif;
+            weight: 600;
+            size: 1.8rem;
+        }
+
+        color: #794100;
+        margin-bottom: 1rem;
+    }
+}
+
+.contacto_main_section_p {
+    font-size: 1.8rem;
+    color: #794100;
+    margin-bottom: 1rem;
+}
+
+.contacto_main_section_form {
+    figure {
+        width: 15%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.contacto_main_section_div {
+    padding: 0rem 2rem 1rem 2rem;
+}
+
+.contacto_main_section_div {
+    ul {
+        display: flex;
+    }
+
+}
+
+.contacto_main_section {
+    div {
+        ul {
+            li {
+                width: 25%;
+                padding: 1.5rem 2rem 0rem 0rem;
+            }
+        }
+    }
+}
+
+.contactoIconos {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.contacto_main_section_form {
+    margin: 0rem 2.2rem 0rem 2rem;
+    padding: 2rem 0rem 2rem 0rem;
+    text-align: center;
+}
+
+.contacto_main_form_p {
+    color: #FF661F;
+
+    font: {
+        size: 1.8rem;
+        weight: 700;
+    }
+
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+.casilleroIniciar {
+    border: {
+        color: #FF661F;
+        style: solid;
+        width: 1.5px;
+    }
+
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 0.7rem;
+
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 1.4rem;
+        weight: 600;
+    }
+}
+
+.contacto_main_section_form {
+    textarea {
+        width: 100%;
+        height: 8rem;
+
+        border: {
+            color: #FF661F;
+            style: solid;
+            width: 1.5px;
+        }
+
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        color: #858585;
+
+        font: {
+            family: 'Montserrat',
+                sans-serif;
+            size: 1.4rem;
+            weight: 600;
+        }
+    }
+}
+
+.btnContacto {
+    display: inline-block;
+    background-color: #FF661F;
+    padding: 0.9rem 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 2.0rem;
+        weight: 700;
+    }
+
+    border: transparent;
+}
+
+/*------------ css INICIAR SESIÓN  mobile---------*/
+
+#iniciarSesion_main_section {
+    background: linear-gradient(0deg, rgba(255, 147, 141, 1) 0%, rgba(255, 203, 200, 1) 35%, rgba(255, 229, 199, 1) 100%);
+    padding: 2rem 0rem;
+}
+
+.iniciarSesion_main_section_form {
+    background-color: #FFF8F0;
+    box-shadow: 0px 0px 10px #707070;
+    margin: 2rem 2.5rem;
+    border-radius: 30px;
+    text-align: center;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.aCruz {
+    display: inline-block;
+    justify-content: right;
+    margin: 3rem 0rem 1rem 0rem;
+    text-align: end;
+}
+
+.main_section_form_iconoCruz {
+    width: 18px;
+    max-width: 100%;
+    height: 100%;
+}
+
+#iniciarSesion_main_section_form_h1 {
+    font-size: 3.9rem;
+    color: #FF661F;
+    margin: 2rem 0rem 1.5rem 0rem;
+}
+
+.iniciarSesion_main_section_form_h4 {
+    text-align: start;
+    margin-bottom: 1.5rem;
+
+    font: {
+        size: 1.8rem;
+        weight: 600;
+    }
+
+    color: #794100;
+}
+
+.iniciarSesion_main_section_form_ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.iniciarSesion_main_section_form_ul {
+    li {
+        margin-bottom: 3rem;
+    }
+}
+
+.btnIngresar {
+    background-color: #FF661F;
+    padding: 0.9rem 5rem;
+    margin-bottom: 1.5rem;
+
+    font: {
+        size: 2.0rem;
+        weight: 700;
+    }
+}
+
+.btnRegistrate {
+    background-color: #794100;
+    padding: 0.9rem 4rem;
+    margin-bottom: 1.5rem;
+
+    font: {
+        size: 2.0rem;
+        weight: 700;
+    }
+}
+
+.iniciarSesion_main_section_form_h5 {
+    padding-bottom: 6rem;
+
+    font: {
+        size: 1.8rem;
+        weight: 600;
+    }
+
+    color: #FF661F;
+}
+
+.iniciarSesion_main_section_form_div {
+    margin: auto;
+}
+
+/*------------ css SOBRENOSOTROS  mobile---------*/
+.meraki_main_section {
+    background-color: #FFE9CE;
+    text-align: center;
+    padding: 0rem 2.5rem;
+}
+
+.meraki_main_section_figure {
+    display: flex;
+    justify-content: center;
+}
+
+.merakiLogoNaranja {
+    width: 160px;
+    max-width: 100%;
+    height: 100%;
+
+    margin: {
+        top: 3rem;
+        bottom: 2rem;
+    }
+}
+
+.imgMerakiProductos {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.meraki_main_section_h1 {
+    margin-top: 4rem;
+
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 1.6rem;
+        weight: 700;
+    }
+
+    line-height: 2.5rem;
+    color: #FF661F;
+}
+
+.figureImgAriana {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.meraki_main_section_img {
+    width: 70%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.meraki_main_section_p {
+    font-size: 1.4rem;
+    color: #FF661F;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.meraki_main_section_div-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_section_div_div-backgroundNaranja {
+    background-color: #FF661F;
+    width: 70%;
+}
+
+.meraki_main_section_h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.meraki_main_section_h3 {
+    color: #ffffff;
+
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 1.2rem;
+    }
+
+    padding-bottom: 0.5rem;
+}
+
+.meraki_main_article_h2 {
+    font-size: 3.0rem;
+    display: inline-block;
+    padding: 3rem 0rem 2rem 0rem;
+    color: #FF661F;
+}
+
+.meraki_main_section_h4 {
+    display: inline-block;
+    color: #FF661F;
+
+    font: {
+        family: 'DM Serif Display', serif;
+        weight: 400;
+        size: 1.8rem;
+    }
+
+    margin: 2rem 0rem 3.5rem 0rem;
+}
+
+.meraki_main_article {
+    background-color: #FFF8F0;
+    text-align: center;
+    padding: 0rem 2.8rem;
+}
+
+.videoMedioAmbiente {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.meraki_main_article_p {
+    color: #794100;
+
+    font: {
+        weight: 600;
+        size: 1.4rem;
+    }
+
+    padding-bottom: 4rem;
+    line-height: 2.5rem;
+}
+
+/*------------ css DETALLE PRODUCTO mobile---------*/
+
+.detalle_main_sectio_a {
+    color: #794100;
+    font-size: 1.18rem;
+}
+
+.detalle_main_sectio_a-bold {
+    font-weight: 700;
+    color: #794100;
+    font-size: 1.18rem;
+}
+
+.detalle_main_section {
+    background-color: #FFFED3;
+}
+
+.detalle_main_section_div {
+    margin-bottom: 2rem;
+}
+
+.detalle_main_section_div_div {
+    padding-top: 1rem;
+}
+
+.detalle_main_section_div-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.detalle_main_section_div_figure {
+    width: 30%;
+    padding-right: 0.5rem;
+}
+
+.detalle_main_section_div_figureDos {
+    width: 90%;
+    padding-left: 0.5rem;
+}
+
+.detalle_main_section_div-flex {
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.detalleImg {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.imgProceso {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#form_input_numero {
+    border-color: #FF661F;
+    width: 80%;
+    padding: 0.7rem;
+    color: #794100;
+
+    font: {
+        size: 2.0rem;
+        family: 'Montserrat', sans-serif;
+        weight: 600;
+    }
+}
+
+.margenes {
+    padding: 1rem 2.5rem;
+}
+
+.detalle_main_section_divEspecificaciones {
+    text-align: left;
+
+    p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #794100;
+        margin-bottom: 2.5rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+        color: #794100;
+    }
+}
+
+.detalle_main_section_h1 {
+    color: #FF661F;
+    margin-bottom: 1rem;
+}
+
+.detalle_main_section_h2 {
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 1.8rem;
+    }
+
+    color: #FF661F;
+    margin-bottom: 1rem;
+}
+
+.detallePrecioH2 {
+    font-size: 3.0rem;
+    color: #794100;
+    margin-bottom: 2rem;
+}
+
+.detalleFigureEstrellas {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.detalle_main_section_h4 {
+    font: {
+        weight: 600;
+        size: 1.8rem;
+    }
+
+    color: #794100;
+    line-height: 2.7rem;
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+    border-top: solid 0.2rem #794100;
+}
+
+.detalle_main_section {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        li {
+            width: 35%;
+            margin: 2rem;
+            text-align: center;
+
+            font: {
+                family: 'Montserrat', sans-serif;
+                size: 1.8rem;
+                weight: 400;
+            }
+
+            color: #794100;
+        }
+    }
+}
+
+.detalle_div_form-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.detalle_div_form-flex {
+    form {
+        width: 30%;
+        justify-content: center;
+    }
+}
+
+.detalle_main_article {
+    background-color: #FFF8F0;
+    margin: 2rem 2.5rem;
+    padding: 1.5rem;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #707070;
+
+    h2 {
+        font-size: 3.0rem;
+        color: #FF661F;
+
+        margin: {
+            top: 0.5rem;
+            bottom: 1rem;
+        }
+    }
+
+    h4 {
+        font: {
+            size: 1.8rem;
+            weight: 600;
+        }
+
+        color: #794100;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        color: #794100;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.detalle_main_article {
+    figure {
+        padding-bottom: 2rem;
+    }
+}
+
+.detalleproducto_form {
+    h2 {
+        font-size: 3.0rem;
+        color: #FF661F;
+        padding-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-top: solid 0.2rem #794100;
+    }
+}
+
+.detalle_form_h5 {
+    font: {
+        size: 1.6rem;
+        weight: 600;
+    }
+
+    color: #794100;
+    margin-bottom: 1rem;
+    line-height: 3rem;
+}
+
+.casilleroProducto {
+    border: {
+        color: #794100;
+        style: solid;
+        width: 1.5px;
+    }
+
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 0.7rem;
+}
+
+.detalle_form_figure {
+    margin-bottom: 1rem;
+    width: 60%;
+}
+
+#cajaResena {
+    border: {
+        color: #794100;
+        style: solid;
+        width: 1.5px;
+    }
+
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+    color: #858585;
+
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 1.4rem;
+        weight: 600;
+    }
+
+    width: 100%;
+    height: 7rem;
+}
+
+#btnResena {
+    display: inline-block;
+    background-color: #FF661F;
+    padding: 0.9rem 2rem;
+    margin-bottom: 3.5rem;
+    border: transparent;
+    color: #ffffff;
+
+    font: {
+        weight: 700;
+        size: 2.0rem;
+        family: 'Montserrat', sans-serif;
+    }
+}
+
+.detalle_form_div_input {
+    text-align: center;
+}
+
+.detalle_producto_section_formUl {
+    ul {
+        margin-bottom: 3rem;
+
+        li {
+            margin-bottom: 2rem;
+
+            h4 {
+                font: {
+                    weight: 700;
+                    size: 1.8rem;
+                }
+
+                color: #794100;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                background-color: #FFF8F0;
+                box-shadow: 0px 0px 10px #707070;
+                padding: 1rem;
+                font-size: 1.6rem;
+                color: #794100;
+                line-height: 2.5rem;
+            }
+        }
+    }
+}
+
+.sectionResena_ul_li_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sectionResena_ul_li_div_figure {
+    width: 40%;
+}
+
+.sectionResena_ul_li_div {
+    h3 {
+        font-size: 2.5rem;
+        color: #FF661F;
+    }
+}
+
+.detalleImgComentario {
+    width: 100%;
+    max-width: 100%;
+}
+
+/*-------------------- TAMAÑO 480px -------------------*/
+@media screen and (min-width: 30em) {
+
+    /*--------HEADER buscador 480px-------*/
+    .cajaBuscador {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buscador {
+        margin-left: 0em;
+    }
+
+    .iconoLupa {
+        position: initial;
+        margin-top: 0.8rem;
+    }
+
+    /*--------------FOOTER 480px------------*/
+
+    footer {
+        ul {
+            li {
+                h6 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    /*--------------INDEX 480px--------------*/
+    .section_ul_li_div {
+        justify-content: space-evenly;
+    }
+
+    .imgFondo {
+        min-height: 262px;
+
+        h1 {
+            padding: 10rem 0rem;
+        }
+
+    }
+
+    /*----------------BOX MERAKI 480px--------------*/
+    .box_main_section-backgroundImg {
+        min-height: 262px;
+
+        h1 {
+            padding-top: 9rem;
+        }
+    }
+
+    /*----------------PRODUCTOS 480px--------------*/
+
+    .productos_main_section-backgroundImg {
+        min-height: 262px;
+    }
+
+    /*-----------SOBRE NOSOTROS 480px----------------*/
+    .sobreNostros_contenedor_h2_video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobreNosotros_div_iframe {
+        width: 100%;
+    }
+
+    /*----------DETALLE DE PRODUCTO 480px-------------*/
+    .detalle_main_article {
+        padding: 2rem;
+    }
+
+    .sectionResena {
+        ul {
+            margin-top: 3rem;
+        }
+    }
+
+}
+
+/*--------------- TAMAÑO TABLETAS 768px -------------------------*/
+@media screen and (min-width: 48em) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    /*-----------HEADER 768px---------*/
+    .hamburguesa {
+        left: 5rem;
+    }
+
+    .iconoUsuario {
+        margin-right: 4em;
+    }
+
+    /*-----------FOOTER 768px---------*/
+    footer {
+        padding: 2rem 5rem;
+    }
+
+    .footer_ul_li-flex {
+        a {
+            width: 15%;
+        }
+    }
+
+    /*----------INDEX 768px-----------*/
+    .imgFondo {
+        min-height: 436px;
+
+        h1 {
+            padding: 18rem 0rem;
+        }
+    }
+
+    .main_article {
+        margin: 3rem 4.5rem;
+    }
+
+    .section_ul-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section_ul_li {
+        width: 43%;
+    }
+
+    .article_ul-flex {
+        margin: 2rem 5rem 1.5rem 5rem;
+    }
+
+    .main_article {
+        background-color: #FFFED3;
+    }
+
+    /*----------------BOX MERAKI 768px--------------*/
+    .box_main_section-backgroundImg {
+        min-height: 436px;
+
+        h1 {
+            padding-top: 17rem;
+        }
+    }
+
+    .box_main_section-backgroundImg a {
+        font-size: 2.2rem;
+    }
+
+    .box_main_section {
+        margin: 3.5rem 0rem;
+    }
+
+    .box_section_ul_li_div {
+        text-align: start;
+    }
+
+    .box_section_ul_li_div_div {
+        margin-bottom: 1.5rem;
+    }
+
+    .box_section_ul_li_div_div {
+        h3 {
+            font-size: 2.2rem;
+        }
+    }
+
+    .box_section_ul_li-fondoRosa {
+        flex-direction: initial;
+        margin: 3rem 4.5rem;
+    }
+
+    .box_section_ul_li-fondoNaranja {
+        flex-direction: row-reverse;
+        margin: 3rem 4.5rem;
+    }
+
+    .box_section_ul_li-fondoRosa {
+        figure {
+            width: 50%;
+        }
+    }
+
+    .box_section_ul_li-fondoNaranja {
+        figure {
+            width: 50%;
+        }
+    }
+
+    .box_section_ul_li_div {
+        width: 50%;
+        padding: 4rem 2.5rem 2.5rem 2.5rem;
+        align-self: center;
+    }
+
+    .box_section_ul_li_div {
+        ul {
+            line-height: 3rem;
+        }
+    }
+
+    .box_section_ul_li_div {
+        li {
+            font-size: 1.8rem;
+        }
+    }
+
+    /*----------------CONTACTO 768px--------------*/
+    .contacto_main_section {
+        margin: 3rem 5rem;
+    }
+
+    .contacto_main_section_figure {
+        padding: 7rem 4rem 1rem 4rem;
+    }
+
+    .contacto_main_section_div {
+        padding: 0rem 5.5rem 1rem 5.5rem;
+    }
+
+    .contacto_main_section {
+        div {
+            ul {
+                li {
+                    width: 20%;
+                }
+            }
+        }
+    }
+
+    .contacto_main_section_form {
+        padding: 2rem 4.5rem 3rem 4.5rem;
+    }
+
+    /*--------------PRODUCTOS 768px--------------*/
+    .productos_main_section-backgroundImg {
+        min-height: 436px;
+
+        a {
+            font-size: 2.2rem;
+        }
+    }
+
+    .productos_main_section_h1 {
+        padding-top: 16rem;
+    }
+
+    .productos_main_section_select {
+        width: 80%;
+        font-size: 2.0rem;
+    }
+
+    .productos_section-margenes {
+        padding: 1rem 5rem;
+    }
+
+    /*----------------SOBRE NOSOTROS 768px---------------*/
+    .meraki_main_section_p {
+        margin: {
+            top: 2rem;
+            left: 2.5rem;
+            right: 2.5rem;
+        }
+    }
+
+    .meraki_main_section_div-flex {
+        flex-direction: initial;
+        padding: 0rem 2.5rem 0rem 0rem;
+    }
+
+    .figureImgAriana {
+        justify-content: end;
+        width: 60%;
+    }
+
+    .main_section_div_div-backgroundNaranja {
+        align-self: end;
+        width: 30%;
+    }
+
+    .meraki_main_article {
+        display: flex;
+        justify-content: center;
+        padding: 0rem 5rem;
+    }
+
+    .meraki_main_article_p {
+        width: 40%;
+        padding-bottom: 0rem;
+        text-align: start;
+        margin: 8.5rem 0rem 0rem 1.7rem;
+    }
+
+    /*----------DETALLE DE PRODUCTO 768px-------------*/
+    .margenes {
+        padding: 2rem 4.5rem;
+    }
+
+    .detalle_main_section_div_div {
+        a {
+            font-size: 2.0rem;
+        }
+    }
+
+    .detalle_main_section_div {
+        ul {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .detalle_main_section {
+        ul {
+            li {
+                width: 30%;
+            }
+        }
+    }
+
+    .detalle_form_figure {
+        width: 45%;
+    }
+
+    .detalle_div_form-flex {
+        justify-content: center;
+    }
+
+    .detalle_main_article {
+        margin: 2rem 4.5rem;
+        padding: 4.5rem;
+
+        p {
+            line-height: 3rem;
+        }
+    }
+
+    /*----------------INICIA SESION 768px--------------*/
+    #iniciarSesion_main_section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .iniciarSesion_main_section_form {
+        width: 60%;
+    }
+
+}
+
+/*--------------- TAMAÑO LAPTOP 1200px ------------------*/
+@media screen and (min-width: 75em) {
+
+    /*------ HEADER 1200px -------*/
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 5.5rem;
+    }
+
+    .bntMenu {
+        display: none;
+    }
+
+    .navBar {
+        width: 70%;
+    }
+
+    /*----------HEADER CON BOOTSTRAP------------*/
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                margin-right: 2rem;
+
+                &:hover {
+                    color: #794100;
+                }
+
+                .nav-link {
+                    color: #ffffff;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .navbar-collapse {
+        .navbar-nav {
+            padding: 0;
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .navBar {
+        nav {
+            width: 90%;
+        }
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    /*---------------MODIFICACIÓN HEADER CON BOOTSTRAP---------*/
+    .navbar-collapse {
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+    }
+
+    .logoMerakiHeader {
+        padding-top: 0;
+    }
+
+    .iconoCarrito {
+        margin-right: 1.5em;
+    }
+
+    .cajaBuscador {
+        padding-bottom: 1rem;
+    }
+
+    /*-------------  FOOTER 1200px -------------*/
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 5rem;
+    }
+
+    footer {
+        ul {
+            width: 30%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .footer_ul_li-flex {
+        a {
+            width: 15%;
+        }
+    }
+
+    /*-------------  INDEX 1200px -------------*/
+    .imgFondo {
+        background-image: url(../imagenes/imgindexinicio.jpg);
+        min-height: 585px;
+
+        h1 {
+            padding: 22rem 0rem 0rem 0rem;
+        }
+    }
+
+    .main_article {
+        margin: 3rem 5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_article {
+        div {
+            width: 60%;
+        }
+    }
+
+    .indexH2 {
+        margin: 4.5rem 2.5rem 2rem 2.5rem;
+    }
+
+    .main_article {
+        div {
+            p {
+                font-size: 1.8rem;
+                line-height: 4rem;
+                text-align: left;
+                padding: 0rem 3.5rem;
+            }
+        }
+    }
+
+    .main_section {
+        margin: 1rem 2.5rem;
+    }
+
+    .index_main_section_h2 {
+        font-size: 5.0rem;
+    }
+
+    .indexP {
+        font-size: 1.8rem;
+        padding-top: 1rem;
+    }
+
+    .section_ul-flex {
+        margin: auto;
+        flex-wrap: initial;
+    }
+
+    .article_ul-flex {
+        justify-content: center;
+        margin: 2rem 2.5rem 1.5rem 2.5rem;
+    }
+
+    .article_ul_li {
+        width: 16%;
+    }
+
+    .section_ul_li_div {
+        justify-content: center;
+    }
+
+    /*--------------BOX MERAKI 1200px--------------*/
+    .box_main_section-backgroundImg {
+        background-image: url(../imagenes/img_boxmeraki-inicio.jpg);
+        min-height: 400px;
+        text-align: left;
+
+        h1 {
+            padding-left: 8rem;
+        }
+
+    }
+
+    .primeraPagina {
+        padding-left: 8rem;
+    }
+
+    .box_main_section {
+        margin: 5rem 0rem;
+    }
+
+    .box_main_section {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .box_section_ul_li-fondoRosa {
+        margin: 2rem 0rem;
+        width: 70%;
+    }
+
+    .box_section_ul_li-fondoNaranja {
+        margin: 4rem 0rem;
+        width: 70%;
+    }
+
+    .box_section_ul_li_div_div {
+        margin-bottom: 0.5rem;
+    }
+
+    .box_section_ul_li_div_div {
+        h3 {
+            font-size: 3.0rem;
+        }
+    }
+
+    .box_section_ul_li_div {
+        ul {
+            line-height: 3.8rem;
+            align-items: start;
+        }
+    }
+
+    .box_section_ul_li_div {
+        li {
+            font-size: 2.0rem;
+        }
+    }
+
+    .box_section_ul_li-fondoRosa {
+        figure {
+            width: 45%;
+        }
+    }
+
+    .box_section_ul_li-fondoNaranja {
+        figure {
+            width: 45%;
+        }
+    }
+
+    /*----------------CONTACTO 1200px--------------*/
+    .contacto_main_section {
+        margin: 5rem 6rem;
+    }
+
+    .contacto_figure_info-flex {
+        display: flex;
+    }
+
+    .contacto_main_section_figure {
+        padding: 5rem 0rem;
+        margin: 0rem 0rem 0rem 5rem;
+        width: 80%;
+    }
+
+    .contacto_main_section_div {
+        padding-top: 3.5rem;
+    }
+
+    .contacto_main_section {
+        div {
+            ul {
+                li {
+                    width: 15%;
+                }
+            }
+        }
+    }
+
+    .contacto_main_section_form {
+        width: 50%;
+        text-align: start;
+    }
+
+    /*--------------PRODUCTOS 1200px--------------*/
+    .productos_main_section-backgroundImg {
+        background-image: url(../imagenes/img-productos-inicio.jpg);
+        min-height: 463px;
+        text-align: right;
+    }
+
+    .productos_a-padding {
+        padding-right: 8rem;
+    }
+
+    .productos_main_section_h1 {
+        padding-right: 8rem;
+    }
+
+    .productosSecciones {
+        flex-direction: row;
+        margin: 0rem 0rem 2rem 0rem;
+        padding: 2rem 4rem;
+        text-align: start;
+        box-shadow: 0px 0px 10px #707070;
+    }
+
+    .productosSecciones {
+        a {
+            background-color: transparent;
+            box-shadow: none;
+            font-size: 3.5rem;
+            margin-right: 1.5rem;
+            display: initial;
+        }
+    }
+
+    .productosSecciones_a {
+        width: 70%;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .cajaFiltro {
+        width: 30%;
+    }
+
+    .productos_section-margenes {
+        padding: 2rem 5rem;
+    }
+
+    .productos_main_section_select {
+        margin-left: 5.5rem;
+    }
+
+    /*----------------SOBRE NOSOTORS 1200px-----------------------*/
+    .merakiLogoNaranja {
+        width: 220px;
+    }
+
+    .meraki_main_section_h1 {
+        font-size: 2.0rem;
+    }
+
+    .meraki_main_section_p {
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+
+    .main_section_div_div-backgroundNaranja {
+        width: 25%;
+    }
+
+    .meraki_main_section_h2 {
+        font-size: 2.5rem;
+    }
+
+    .meraki_main_section_h3 {
+        font-size: 1.8rem;
+    }
+
+    .meraki_main_section_h4 {
+        font-size: 3.0rem;
+        margin: 3rem 0rem 5rem 0rem;
+    }
+
+    .meraki_main_article {
+        justify-content: space-around;
+    }
+
+    .sobreNostros_contenedor_h2_video {
+        width: 50%;
+    }
+
+    .meraki_main_article_p {
+        margin: 8.5rem 0rem 0rem 0rem;
+        font-size: 1.8rem;
+    }
+
+    /*-------------DETALLE DE PRODUCTO 1200px------------------*/
+    .detalle_main_section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .detalle_main_section_divEspecificaciones {
+        width: 130%;
+        padding-left: 3rem;
+        padding-top: 4rem;
+        padding-right: 2rem;
+    }
+
+    .detalle_main_section_div_div {
+        padding-left: 2.5rem;
+    }
+
+    .detalle-marginBottom {
+        margin-bottom: 0.5rem;
+    }
+
+    .detalleFigureEstrellas {
+        width: 30%;
+    }
+
+    .detalle_main_section_divEspecificaciones {
+        p {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .detalle_main_section {
+        ul {
+            justify-content: space-between;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .detalle_main_section {
+        ul {
+            li {
+                width: 18%;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .detalle_main_section_div_figureDos {
+        width: 60%;
+    }
+
+    .detalle_main_article {
+        display: flex;
+        margin: 3rem 18rem;
+        padding: 4rem;
+
+        h4 {
+            font-size: 2.0rem;
+        }
+
+        figure {
+            width: 50%;
+        }
+    }
+
+    .detalle_main_article_contenedor {
+        width: 50%;
+        padding-right: 4rem;
+    }
+
+    .detalle_producto_section_formUl {
+        display: flex;
+        border-top: solid 0.2rem #794100;
+        padding: 2rem 5rem 1rem 5rem;
+    }
+
+    .detalleproducto_form {
+        h2 {
+            border-top: transparent;
+        }
+    }
+
+    .detalle_producto_section_formUl {
+        ul {
+            width: 50%;
+            margin-bottom: 0rem;
+
+            li {
+                margin-bottom: 6rem;
+
+                p {
+                    font-size: 1.8rem;
+                    padding: 2rem;
+                    line-height: 3.5rem;
+                }
+            }
+        }
+    }
+
+    .casilleroProducto {
+        width: 60%;
+    }
+
+    #cajaResena {
+        width: 75%;
+    }
+
+    .detalle_form_figure {
+        width: 35%;
+    }
+
+    .detalle_form_div_input {
+        text-align: start;
+    }
+
+    .sectionResena_ul_li_div {
+        h3 {
+            font-size: 3.0rem;
+        }
+    }
+
+    /*---------------- INICIAR SESION 1200px-----------------*/
+    .iniciarSesion_main_section_form {
+        padding: 0rem 5rem;
+    }
+
+    #iniciarSesion_main_section_form_h1 {
+        font-size: 5.5rem;
+        margin: 1rem 0rem;
+    }
+
+    .iniciarSesion_main_section_form_h4 {
+        font-size: 2.0rem;
+    }
+
+    .iniciarSesion_main_section_form_h5 {
+        padding-bottom: 4rem;
+        font-size: 2.0rem;
+    }
+
+}
