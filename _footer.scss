@@ -40,15 +40,12 @@ footer {
 }
 
 .iconosFooter {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+    @include imgEstilo(100%);
 }
 
 .logoFooter {
-    max-width: 100%;
-    width: 100px;
-    height: auto;
+    @include imgEstilo(100px);
+
 }
 
 .footer_ul_li-flex {
@@ -66,4 +63,3 @@ footer {
         width: 20%;
     }
 }
-

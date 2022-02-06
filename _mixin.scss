@@ -1,0 +1,21 @@
+@mixin imgFondo ($bgimg, $minheight, $textalign) {
+    background-image: $bgimg;
+    min-height: $minheight;
+    text-align: $textalign;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+@mixin fuenteEstilo ($color, $fontsize, $interlineado){
+    color: $color;
+    font-size: $fontsize;
+    line-height: $interlineado;
+}
+
+@mixin imgEstilo ($width){
+    max-width: 100%;
+    height: auto;
+    width: $width;
+}

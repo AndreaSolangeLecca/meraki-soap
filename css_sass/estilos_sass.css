@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;600;700&display=swap");
+/*----------Modificaciones generales---------*/
 * {
   margin: 0;
   padding: 0;
@@ -113,8 +114,8 @@ header {
 
 .logoMerakiHeader {
   max-width: 100%;
-  width: 13rem;
   height: auto;
+  width: 13rem;
   padding-top: 1.4rem;
 }
 
@@ -183,25 +184,25 @@ header {
 
 .iconoLupa {
   max-width: 100%;
+  height: auto;
   width: 20px;
   position: absolute;
   margin-top: 1.45rem;
   margin-left: -3.2rem;
-  height: auto;
 }
 
 .iconoCarrito {
-  margin-right: 1em;
   max-width: 100%;
-  width: 30px;
   height: auto;
+  width: 30px;
+  margin-right: 1em;
 }
 
 .iconoUsuario {
-  margin-right: 2.8em;
   max-width: 100%;
-  width: 20px;
   height: auto;
+  width: 20px;
+  margin-right: 2.8em;
 }
 
 /*------------- FOOTER  mobile ------------*/
@@ -230,14 +231,14 @@ footer ul li h6 {
 
 .iconosFooter {
   max-width: 100%;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .logoFooter {
   max-width: 100%;
-  width: 100px;
   height: auto;
+  width: 100px;
 }
 
 .footer_ul_li-flex {
@@ -261,16 +262,16 @@ footer ul li h6 {
 /*------------ css INDEX  mobile ---------*/
 .imgFondo {
   background-image: url(../imagenes/imgindexinicio2.jpg);
+  min-height: 224px;
+  text-align: center;
   background-repeat: no-repeat;
   background-size: 100%;
   max-width: 100%;
   width: 100%;
-  min-height: 224px;
 }
 
 .imgFondo h1 {
   color: #ffffff;
-  text-align: center;
   padding: 8rem 0rem;
 }
 
@@ -290,36 +291,36 @@ footer ul li h6 {
 
 .indexH2 {
   color: #FF661F;
-  font-size: 3.0rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
   text-align: center;
   margin: 3rem 2.5rem 1rem 2.5rem;
-  line-height: 3.5rem;
 }
 
 .main_article_figure_img {
   max-width: 100%;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .main_article div p {
-  text-align: center;
   color: #794100;
   font-size: 1.6rem;
   line-height: 2.5rem;
+  text-align: center;
   margin-bottom: 1.5rem;
 }
 
 .indexImg {
   max-width: 100%;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .indexIlus {
   max-width: 100%;
-  width: 80%;
   height: auto;
+  width: 80%;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   --animate-duration: 2s;
@@ -355,12 +356,12 @@ footer ul li h6 {
 }
 
 .indexP {
-  margin: 0rem 2.5rem;
-  color: #794100;
   font-weight: 700;
+  color: #794100;
   font-size: 1.6rem;
-  text-align: center;
   line-height: 2rem;
+  text-align: center;
+  margin: 0rem 2.5rem;
 }
 
 .section_ul_li_div {
@@ -396,7 +397,7 @@ footer ul li h6 {
   margin-bottom: 1.5rem;
 }
 
-.botones_meraki {
+.botones_meraki, .btnContacto, .btnIngresar, .btnRegistrate, #btnResena {
   display: inline-block;
   background-color: #FF661F;
   padding: 0.9rem 2rem;
@@ -432,19 +433,19 @@ footer ul li h6 {
 
 .article_ul_img {
   max-width: 100%;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 /*------------ css PRODUCTOS  mobile---------*/
 .productos_main_section-backgroundImg {
   background-image: url(../imagenes/img-productos-inicio-2.jpg);
+  min-height: 215px;
+  text-align: center;
   background-repeat: no-repeat;
   background-size: 100%;
   max-width: 100%;
   width: 100%;
-  min-height: 215px;
-  text-align: center;
 }
 
 .productos_main_section_h1 {
@@ -496,12 +497,12 @@ footer ul li h6 {
   border-color: #FF661F;
   border-style: solid;
   border-width: 2px;
-  padding: 0.5em;
-  color: #FF661F;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
   font-weight: 700;
+  font-size: 1.8rem;
+  color: #FF661F;
   width: 70%;
+  padding: 0.5em;
 }
 
 /*---------------- GRID -------------------*/
@@ -535,9 +536,9 @@ footer ul li h6 {
 }
 
 .productos_section_ul_li_img {
-  width: 100%;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .productos_section_ul_ul {
@@ -561,6 +562,7 @@ footer ul li h6 {
 .productos_section_ul_ul_li h3 {
   color: #FF661F;
   font-size: 2.2rem;
+  line-height: initial;
 }
 
 .productos_section_ul_ul_li h4 {
@@ -576,12 +578,12 @@ footer ul li h6 {
 /*------------ css BOX-MERAKI  mobile---------*/
 .box_main_section-backgroundImg {
   background-image: url(../imagenes/img_boxmeraki-inicio2.jpg);
+  min-height: 230px;
+  text-align: center;
   background-repeat: no-repeat;
   background-size: 100%;
   max-width: 100%;
   width: 100%;
-  min-height: 230px;
-  text-align: center;
 }
 
 .box_main_section-backgroundImg h1 {
@@ -611,8 +613,8 @@ footer ul li h6 {
 
 .box_section_ul_li_img {
   max-width: 100%;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .box_section_ul_li-fondoNaranja {
@@ -644,8 +646,8 @@ footer ul li h6 {
 }
 
 .box_section_ul_li_div_div h3 {
-  font-size: 1.8rem;
   color: #794100;
+  font-size: 1.8rem;
 }
 
 .box_section_ul_li_div li {
@@ -683,8 +685,8 @@ footer ul li h6 {
 
 .contacto_main_section_figure_img {
   max-width: 100%;
-  width: 100%;
   height: auto;
+  width: 100%;
   border-radius: 27px;
 }
 
@@ -693,10 +695,11 @@ footer ul li h6 {
 }
 
 .contacto_main_section h3 {
+  color: #794100;
+  font-size: 1.8rem;
+  line-height: initial;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
-  color: #794100;
   margin-bottom: 1rem;
 }
 
@@ -727,9 +730,9 @@ footer ul li h6 {
 }
 
 .contactoIconos {
-  width: 100%;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .contacto_main_section_form {
@@ -768,20 +771,16 @@ footer ul li h6 {
   margin-bottom: 2rem;
   padding: 0.5rem;
   color: #858585;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat',
+ sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
 }
 
 .btnContacto {
-  display: inline-block;
-  background-color: #FF661F;
-  padding: 0.9rem 2rem;
-  margin-bottom: 1.5rem;
-  color: #ffffff;
+  /*--------------APLICACIÓN DE EXTEND----------------*/
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.0rem;
-  font-weight: 700;
+  color: #ffffff;
   border: transparent;
 }
 
@@ -819,9 +818,9 @@ footer ul li h6 {
 }
 
 .main_section_form_iconoCruz {
-  width: 18px;
   max-width: 100%;
-  height: 100%;
+  height: auto;
+  width: 18px;
 }
 
 #iniciarSesion_main_section_form_h1 {
@@ -854,19 +853,13 @@ footer ul li h6 {
 }
 
 .btnIngresar {
-  background-color: #FF661F;
+  display: initial;
   padding: 0.9rem 5rem;
-  margin-bottom: 1.5rem;
-  font-size: 2.0rem;
-  font-weight: 700;
 }
 
 .btnRegistrate {
   background-color: #794100;
   padding: 0.9rem 4rem;
-  margin-bottom: 1.5rem;
-  font-size: 2.0rem;
-  font-weight: 700;
 }
 
 .iniciarSesion_main_section_form_h5 {
@@ -897,26 +890,26 @@ footer ul li h6 {
 }
 
 .merakiLogoNaranja {
-  width: 160px;
   max-width: 100%;
-  height: 100%;
+  height: auto;
+  width: 160px;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
 .imgMerakiProductos {
-  width: 100%;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .meraki_main_section_h1 {
+  color: #FF661F;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
   margin-top: 4rem;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 2.5rem;
-  color: #FF661F;
 }
 
 .figureImgAriana {
@@ -930,14 +923,14 @@ footer ul li h6 {
 }
 
 .meraki_main_section_img {
-  width: 70%;
   max-width: 100%;
-  height: 100%;
+  height: auto;
+  width: 70%;
 }
 
 .meraki_main_section_p {
-  font-size: 1.4rem;
   color: #FF661F;
+  font-size: 1.4rem;
   line-height: 2.5rem;
   margin-top: 1.5rem;
 }
@@ -1003,10 +996,10 @@ footer ul li h6 {
 
 .meraki_main_article_p {
   color: #794100;
-  font-weight: 600;
   font-size: 1.4rem;
-  padding-bottom: 4rem;
   line-height: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 4rem;
 }
 
 /*------------ css DETALLE PRODUCTO mobile---------*/
@@ -1054,20 +1047,21 @@ footer ul li h6 {
 }
 
 .detalle_main_section_div-flex img {
-  width: 100%;
   max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .detalleImg {
-  width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .imgProceso {
-  width: 100%;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 #form_input_numero {
@@ -1089,9 +1083,9 @@ footer ul li h6 {
 }
 
 .detalle_main_section_divEspecificaciones p {
+  color: #794100;
   font-size: 1.8rem;
   line-height: 2.5rem;
-  color: #794100;
   margin-bottom: 2.5rem;
 }
 
@@ -1124,10 +1118,10 @@ footer ul li h6 {
 }
 
 .detalle_main_section_h4 {
-  font-weight: 600;
-  font-size: 1.8rem;
   color: #794100;
+  font-size: 1.8rem;
   line-height: 2.7rem;
+  font-weight: 600;
   margin-bottom: 1rem;
   padding-top: 1.5rem;
   border-top: solid 0.2rem #794100;
@@ -1194,8 +1188,8 @@ footer ul li h6 {
 }
 
 .detalle_main_article p {
-  font-size: 1.8rem;
   color: #794100;
+  font-size: 1.8rem;
   line-height: 2.5rem;
   margin-bottom: 2rem;
 }
@@ -1213,11 +1207,11 @@ footer ul li h6 {
 }
 
 .detalle_form_h5 {
-  font-size: 1.6rem;
-  font-weight: 600;
   color: #794100;
-  margin-bottom: 1rem;
+  font-size: 1.6rem;
   line-height: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .casilleroProducto {
@@ -1249,14 +1243,9 @@ footer ul li h6 {
 }
 
 #btnResena {
-  display: inline-block;
-  background-color: #FF661F;
-  padding: 0.9rem 2rem;
   margin-bottom: 3.5rem;
   border: transparent;
   color: #ffffff;
-  font-weight: 700;
-  font-size: 2.0rem;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -1280,13 +1269,13 @@ footer ul li h6 {
 }
 
 .detalle_producto_section_formUl ul li p {
+  color: #794100;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
   background-color: #FFF8F0;
   -webkit-box-shadow: 0px 0px 10px #707070;
           box-shadow: 0px 0px 10px #707070;
   padding: 1rem;
-  font-size: 1.6rem;
-  color: #794100;
-  line-height: 2.5rem;
 }
 
 .sectionResena_ul_li_div {
@@ -1312,8 +1301,9 @@ footer ul li h6 {
 }
 
 .detalleImgComentario {
-  width: 100%;
   max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 /*-------------------- TAMAÑO 480px -------------------*/
@@ -1777,10 +1767,16 @@ footer ul li h6 {
   .box_section_ul_li-fondoRosa {
     margin: 2rem 0rem;
     width: 70%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .box_section_ul_li-fondoNaranja {
     margin: 4rem 0rem;
     width: 70%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .box_section_ul_li_div_div {
     margin-bottom: 0.5rem;

@@ -1,18 +1,9 @@
 /*------------ css INDEX  mobile ---------*/
 .imgFondo {
-    background: {
-        image: url(../imagenes/imgindexinicio2.jpg);
-        repeat: no-repeat;
-        size: 100%;
-    }
-
-    max-width: 100%;
-    width: 100%;
-    min-height: 224px;
+    @include imgFondo(url(../imagenes/imgindexinicio2.jpg), 224px, center);
 
     h1 {
-        color: #ffffff;
-        text-align: center;
+        color: map-get($estilosFuentes, $colorB);
         padding: 8rem 0rem;
     }
 }
@@ -23,7 +14,7 @@
     div {
         background-color: #FFFED3;
         padding: 0.1rem 1.3rem 1rem 1.3rem;
-        text-align: center;
+        text-align: map-get($estilosFuentes, $textAlign);
     }
 }
 
@@ -32,41 +23,34 @@
 }
 
 .indexH2 {
-    color: #FF661F;
-    font-size: 3.0rem;
-    text-align: center;
+    @include fuenteEstilo(#FF661F, 3rem, 3.5rem);
+    text-align: map-get($estilosFuentes, $textAlign);
     margin: 3rem 2.5rem 1rem 2.5rem;
-    line-height: 3.5rem;
+
 }
 
 .main_article_figure_img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+    @include imgEstilo(100%);
+
 }
 
 .main_article {
     div {
         p {
-            text-align: center;
-            color: #794100;
-            font-size: 1.6rem;
-            line-height: 2.5rem;
+            @include fuenteEstilo(#794100, 1.6rem, 2.5rem);
+            text-align: map-get($estilosFuentes, $textAlign);
             margin-bottom: 1.5rem;
         }
     }
 }
 
 .indexImg {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+    @include imgEstilo(100%);
+
 }
 
 .indexIlus {
-    max-width: 100%;
-    width: 80%;
-    height: auto;
+    @include imgEstilo(80%);
     animation-iteration-count: infinite;
     --animate-duration: 2s;
 }
@@ -75,7 +59,7 @@
     display: flex;
     flex-direction: column;
     margin: 2rem 1.8rem;
-    text-align: center;
+    text-align: map-get($estilosFuentes, $textAlign);
     background-color: #ffffff;
     box-shadow: 0px 0px 10px #707070;
 }
@@ -101,23 +85,20 @@
 }
 
 .indexP {
-    margin: 0rem 2.5rem;
-    color: #794100;
-
     font: {
         weight: 700;
-        size: 1.6rem;
     }
 
-    text-align: center;
-    line-height: 2rem;
+    @include fuenteEstilo(#794100, 1.6rem, 2rem);
+    text-align: map-get($estilosFuentes, $textAlign);
+    margin: 0rem 2.5rem;
 }
 
 .section_ul_li_div {
-    display: flex;
-    justify-content: center;
+    display: map-get($estiloContenedor, $display);
+    justify-content: map-get($estiloContenedor, $justifyContent);
     padding: 1rem 1.5rem;
-    align-items: center;
+    align-items: map-get($estilosFuentes, $alignItems);
     text-align: left;
 
     figure {
@@ -129,7 +110,7 @@
     h4 {
         font: {
             family: 'DM Serif Display', serif;
-            weight: 400;
+            weight: map-get($estilosFuentes, $weightfuente);
             size: 2.2rem;
         }
 
@@ -163,7 +144,7 @@
 }
 
 .main_articleDos {
-    text-align: center;
+    text-align: map-get($estilosFuentes, $textAlign);
     background-color: #FFE5C6;
     padding: 0.1rem 0rem 3rem 0rem;
 }
@@ -183,24 +164,15 @@
 }
 
 .article_ul_img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+    @include imgEstilo(100%);
+
 }
 
 /*------------ css PRODUCTOS  mobile---------*/
 
 .productos_main_section-backgroundImg {
-    background: {
-        image: url(../imagenes/img-productos-inicio-2.jpg);
-        repeat: no-repeat;
-        size: 100%;
-    }
+    @include imgFondo(url(../imagenes/img-productos-inicio-2.jpg), 215px, center);
 
-    max-width: 100%;
-    width: 100%;
-    min-height: 215px;
-    text-align: center;
 }
 
 .productos_main_section_h1 {
@@ -212,8 +184,8 @@
     display: flex;
     flex-direction: column;
     line-height: 5rem;
-    text-align: center;
-    align-items: center;
+    text-align: map-get($estilosFuentes, $textAlign);
+    align-items: map-get($estilosFuentes, $alignItems);
     margin: 2rem 0rem 2rem 0rem;
 }
 
@@ -223,7 +195,7 @@
 
         font : {
             family: 'DM Serif Display', serif;
-            weight: 400;
+            weight: map-get($estilosFuentes, $weightfuente);
             size: 3.0rem;
         }
 
@@ -254,16 +226,15 @@
         width: 2px;
     }
 
-    padding: 0.5em;
-    color: #FF661F;
-
     font: {
         family: 'Montserrat', sans-serif;
-        size: 1.8rem;
         weight: 700;
+        size: 1.8rem;
     }
 
+    color: #FF661F;
     width: 70%;
+    padding: 0.5em;
 }
 
 /*---------------- GRID -------------------*/
@@ -294,9 +265,7 @@
 }
 
 .productos_section_ul_li_img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    @include imgEstilo(100%);
 }
 
 .productos_section_ul_ul {
@@ -315,8 +284,7 @@
 
 .productos_section_ul_ul_li {
     h3 {
-        color: #FF661F;
-        font-size: 2.2rem;
+        @include fuenteEstilo(#FF661F, 2.2rem, initial);
     }
 }
 
@@ -332,21 +300,12 @@
 }
 
 .cajaBnt {
-    text-align: center;
+    text-align: map-get($estilosFuentes, $textAlign);
 }
 
 /*------------ css BOX-MERAKI  mobile---------*/
 .box_main_section-backgroundImg {
-    background: {
-        image: url(../imagenes/img_boxmeraki-inicio2.jpg);
-        repeat: no-repeat;
-        size: 100%;
-    }
-
-    max-width: 100%;
-    width: 100%;
-    min-height: 230px;
-    text-align: center;
+    @include imgFondo(url(../imagenes/img_boxmeraki-inicio2.jpg), 230px, center);
 
     h1 {
         color: #ffffff;
@@ -370,9 +329,7 @@
 }
 
 .box_section_ul_li_img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+    @include imgEstilo(100%);
 }
 
 .box_section_ul_li-fondoNaranja {
@@ -385,7 +342,7 @@
 .box_section_ul_li_div {
     padding: 1rem 1.5rem;
     line-height: 1.5rem;
-    text-align: center;
+    text-align: map-get($estilosFuentes, $textAlign);
 }
 
 .box_section_ul_li_div_div {
@@ -396,8 +353,8 @@
 
 .box_section_ul_li_div_div {
     h3 {
-        font-size: 1.8rem;
         color: #794100;
+        font-size: 1.8rem;
     }
 }
 
@@ -437,9 +394,7 @@
 }
 
 .contacto_main_section_figure_img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+    @include imgEstilo(100%);
     border-radius: 27px;
 }
 
@@ -451,13 +406,13 @@
 
 .contacto_main_section {
     h3 {
+        @include fuenteEstilo(#794100, 1.8rem, initial);
+
         font: {
             family: 'Montserrat', sans-serif;
             weight: 600;
-            size: 1.8rem;
         }
 
-        color: #794100;
         margin-bottom: 1rem;
     }
 }
@@ -498,15 +453,13 @@
 }
 
 .contactoIconos {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    @include imgEstilo(100%);
 }
 
 .contacto_main_section_form {
     margin: 0rem 2.2rem 0rem 2rem;
     padding: 2rem 0rem 2rem 0rem;
-    text-align: center;
+    text-align: map-get($estilosFuentes, $textAlign);
 }
 
 .contacto_main_form_p {
@@ -565,18 +518,14 @@
 }
 
 .btnContacto {
-    display: inline-block;
-    background-color: #FF661F;
-    padding: 0.9rem 2rem;
-    margin-bottom: 1.5rem;
-    color: #ffffff;
+    /*--------------APLICACIÓN DE EXTEND----------------*/
+    @extend .botones_meraki;
 
     font: {
         family: 'Montserrat', sans-serif;
-        size: 2.0rem;
-        weight: 700;
     }
 
+    color: #ffffff;
     border: transparent;
 }
 
@@ -592,7 +541,7 @@
     box-shadow: 0px 0px 10px #707070;
     margin: 2rem 2.5rem;
     border-radius: 30px;
-    text-align: center;
+    text-align: map-get($estilosFuentes, $textAlign);
     padding: 0rem 2rem;
     display: flex;
     flex-direction: column;
@@ -606,9 +555,8 @@
 }
 
 .main_section_form_iconoCruz {
-    width: 18px;
-    max-width: 100%;
-    height: 100%;
+    @include imgEstilo(18px);
+
 }
 
 #iniciarSesion_main_section_form_h1 {
@@ -642,25 +590,17 @@
 }
 
 .btnIngresar {
-    background-color: #FF661F;
+    @extend .botones_meraki;
+    display: initial;
     padding: 0.9rem 5rem;
-    margin-bottom: 1.5rem;
 
-    font: {
-        size: 2.0rem;
-        weight: 700;
-    }
 }
 
 .btnRegistrate {
+    @extend .botones_meraki;
     background-color: #794100;
     padding: 0.9rem 4rem;
-    margin-bottom: 1.5rem;
 
-    font: {
-        size: 2.0rem;
-        weight: 700;
-    }
 }
 
 .iniciarSesion_main_section_form_h5 {
@@ -681,7 +621,7 @@
 /*------------ css SOBRENOSOTROS  mobile---------*/
 .meraki_main_section {
     background-color: #FFE9CE;
-    text-align: center;
+    text-align: map-get($estilosFuentes, $textAlign);
     padding: 0rem 2.5rem;
 }
 
@@ -691,9 +631,7 @@
 }
 
 .merakiLogoNaranja {
-    width: 160px;
-    max-width: 100%;
-    height: 100%;
+    @include imgEstilo(160px);
 
     margin: {
         top: 3rem;
@@ -702,22 +640,19 @@
 }
 
 .imgMerakiProductos {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    @include imgEstilo(100%);
+
 }
 
 .meraki_main_section_h1 {
+    @include fuenteEstilo(#FF661F, 1.6rem, 2.5rem);
     margin-top: 4rem;
 
     font: {
         family: 'Montserrat', sans-serif;
-        size: 1.6rem;
         weight: 700;
     }
 
-    line-height: 2.5rem;
-    color: #FF661F;
 }
 
 .figureImgAriana {
@@ -727,15 +662,12 @@
 }
 
 .meraki_main_section_img {
-    width: 70%;
-    max-width: 100%;
-    height: 100%;
+    @include imgEstilo(70%);
+
 }
 
 .meraki_main_section_p {
-    font-size: 1.4rem;
-    color: #FF661F;
-    line-height: 2.5rem;
+    @include fuenteEstilo(#FF661F, 1.4rem, 2.5rem);
     margin-top: 1.5rem;
 }
 
@@ -800,15 +732,13 @@
 }
 
 .meraki_main_article_p {
-    color: #794100;
+    @include fuenteEstilo(#794100, 1.4rem, 2.5rem);
 
     font: {
         weight: 600;
-        size: 1.4rem;
     }
 
     padding-bottom: 4rem;
-    line-height: 2.5rem;
 }
 
 /*------------ css DETALLE PRODUCTO mobile---------*/
@@ -854,21 +784,16 @@
 
 .detalle_main_section_div-flex {
     img {
-        width: 100%;
-        max-width: 100%;
+        @include imgEstilo(100%);
     }
 }
 
 .detalleImg {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
+    @include imgEstilo(100%);
 }
 
 .imgProceso {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    @include imgEstilo(100%);
 }
 
 #form_input_numero {
@@ -892,9 +817,7 @@
     text-align: left;
 
     p {
-        font-size: 1.8rem;
-        line-height: 2.5rem;
-        color: #794100;
+        @include fuenteEstilo(#794100, 1.8rem, 2.5rem);
         margin-bottom: 2.5rem;
     }
 
@@ -931,13 +854,12 @@
 }
 
 .detalle_main_section_h4 {
+    @include fuenteEstilo(#794100, 1.8rem, 2.7rem);
+
     font: {
         weight: 600;
-        size: 1.8rem;
     }
 
-    color: #794100;
-    line-height: 2.7rem;
     margin-bottom: 1rem;
     padding-top: 1.5rem;
     border-top: solid 0.2rem #794100;
@@ -1006,9 +928,7 @@
     }
 
     p {
-        font-size: 1.8rem;
-        color: #794100;
-        line-height: 2.5rem;
+        @include fuenteEstilo(#794100, 1.8rem, 2.5rem);
         margin-bottom: 2rem;
     }
 }
@@ -1030,14 +950,13 @@
 }
 
 .detalle_form_h5 {
+    @include fuenteEstilo(#794100, 1.6rem, 3rem);
+
     font: {
-        size: 1.6rem;
         weight: 600;
     }
 
-    color: #794100;
     margin-bottom: 1rem;
-    line-height: 3rem;
 }
 
 .casilleroProducto {
@@ -1079,16 +998,13 @@
 }
 
 #btnResena {
-    display: inline-block;
-    background-color: #FF661F;
-    padding: 0.9rem 2rem;
+    @extend .botones_meraki;
+
     margin-bottom: 3.5rem;
     border: transparent;
     color: #ffffff;
 
     font: {
-        weight: 700;
-        size: 2.0rem;
         family: 'Montserrat', sans-serif;
     }
 }
@@ -1115,12 +1031,10 @@
             }
 
             p {
+                @include fuenteEstilo(#794100, 1.6rem, 2.5rem);
                 background-color: #FFF8F0;
                 box-shadow: 0px 0px 10px #707070;
                 padding: 1rem;
-                font-size: 1.6rem;
-                color: #794100;
-                line-height: 2.5rem;
             }
         }
     }
@@ -1145,8 +1059,8 @@
 }
 
 .detalleImgComentario {
-    width: 100%;
-    max-width: 100%;
+    @include imgEstilo(100%);
+
 }
 
 /*-------------------- TAMAÑO 480px -------------------*/
@@ -1698,11 +1612,13 @@
     .box_section_ul_li-fondoRosa {
         margin: 2rem 0rem;
         width: 70%;
+        justify-content: space-between;
     }
 
     .box_section_ul_li-fondoNaranja {
         margin: 4rem 0rem;
         width: 70%;
+        justify-content: space-between;
     }
 
     .box_section_ul_li_div_div {
@@ -1876,9 +1792,12 @@
 
     .detalle_main_section_divEspecificaciones {
         width: 130%;
-        padding-left: 3rem;
-        padding-top: 4rem;
-        padding-right: 2rem;
+
+        padding: {
+            left: 3rem;
+            top: 4rem;
+            right: 2rem;
+        }
     }
 
     .detalle_main_section_div_div {

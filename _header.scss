@@ -1,3 +1,4 @@
+/*----------Modificaciones generales---------*/
 * {
     margin: 0;
     padding: 0;
@@ -113,9 +114,7 @@ header {
 }
 
 .logoMerakiHeader {
-    max-width: 100%;
-    width: 13rem;
-    height: auto;
+    @include imgEstilo(13rem);
     padding-top: 1.4rem;
 }
 
@@ -166,26 +165,20 @@ header {
 }
 
 .iconoLupa {
-    max-width: 100%;
-    width: 20px;
+    @include imgEstilo(20px);
     position: absolute;
     margin: {
         top: 1.45rem;
         left: -3.2rem;
     }
-    height: auto;
 }
 
 .iconoCarrito {
+    @include imgEstilo(30px);
     margin-right: 1em;
-    max-width: 100%;
-    width: 30px;
-    height: auto;
 }
 
 .iconoUsuario {
+    @include imgEstilo(20px);
     margin-right: 2.8em;
-    max-width: 100%;
-    width: 20px;
-    height: auto;
 }
