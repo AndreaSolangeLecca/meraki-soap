@@ -107,7 +107,7 @@ header {
   padding-top: 0.5rem;
 }
 
-.navBar figure {
+.navBar div {
   width: 45%;
   text-align: center;
 }
@@ -771,8 +771,7 @@ footer ul li h6 {
   margin-bottom: 2rem;
   padding: 0.5rem;
   color: #858585;
-  font-family: 'Montserrat',
- sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
 }
@@ -1382,6 +1381,9 @@ footer ul li h6 {
     font-size: 4.5rem;
   }
   /*-----------HEADER 768px---------*/
+  .bntMenu {
+    left: 5rem;
+  }
   .hamburguesa {
     left: 5rem;
   }

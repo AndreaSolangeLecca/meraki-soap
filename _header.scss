@@ -19,7 +19,7 @@ h2,
 h3 {
     font: {
         family: 'DM Serif Display', serif;
-        weight: 400;
+        weight: map-get($estilosFuentes, weightfuente);
     }
 }
 
@@ -35,7 +35,7 @@ img {
 }
 
 p {
-    font-weight: 400;
+    font-weight: map-get($estilosFuentes, weightfuente);
     margin-bottom: 0;
 }
 
@@ -45,7 +45,7 @@ a {
         size: 1.4rem;
     }
 
-    color: #ffffff;
+    color: map-get($estilosFuentes, colorB);
     text-decoration: none;
 }
 
@@ -102,14 +102,14 @@ header {
 .navBar {
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items: map-get($estilosFuentes, alignItems);
     padding-top: 0.5rem;
 }
 
 .navBar {
-    figure{
+    div{
     width: 45%;
-    text-align: center;
+    text-align: map-get($estilosFuentes, textAlign);
     }
 }
 
@@ -132,19 +132,19 @@ header {
 }
 
 .hamburguesa {
-    color: #794100;
+    color: map-get($estilosFuentes, colorM);
     font-size: 3.5rem;
     z-index: 9990;
 }
 
 .cajaBuscador {
     padding-bottom: 1.5rem;
-    text-align: center;
+    text-align: map-get($estilosFuentes, textAlign);
 }
 
 .buscador {
     border: {
-        color: #ffffff;
+        color: map-get($estilosFuentes, colorB);
         radius: 22px;
         style: solid;
     }
@@ -154,10 +154,10 @@ header {
     background-color: transparent;
     position: relative;
     &::placeholder {
-        color: #ffffff;
+        color: map-get($estilosFuentes, colorB);
         font: {
             family: 'Montserrat', sans-serif;
-            weight: 400;
+            weight: map-get($estilosFuentes, weightfuente);
             size: 1.5rem;
         }
       
