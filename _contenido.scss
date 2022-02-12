@@ -134,6 +134,9 @@
 .botones_meraki {
     display: inline-block;
     background-color: #FF661F;
+    &:hover{
+        background-color: #794100;
+    }
     padding: 0.9rem 2rem;
     margin-bottom: 1.5rem;
 
@@ -209,8 +212,10 @@
 }
 
 .productosSecciones_div {
-    &:hover {
-        color: #FF661F;
+    a {
+        &:hover {
+            color: #FF661F;
+        }
     }
 }
 
@@ -600,6 +605,10 @@
     @extend .botones_meraki;
     background-color: map-get($estilosFuentes, colorM);
     padding: 0.9rem 4rem;
+    &:hover{
+        background-color: #F3C188;
+        color: #794100;
+    }
 
 }
 
@@ -1446,13 +1455,13 @@
             .nav-item {
                 margin-right: 2rem;
 
-                &:hover {
-                    color: map-get($estilosFuentes, colorM);
-                }
-
                 .nav-link {
                     color: map-get($estilosFuentes, colorB);
                     font-size: 1.6rem;
+
+                    &:hover {
+                        color: map-get($estilosFuentes, colorM);
+                    }
                 }
             }
         }
