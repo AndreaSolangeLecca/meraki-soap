@@ -1,7 +1,7 @@
 {
   "name": "meraki-andrea-lecca",
   "version": "1.0.0",
-  "description": "",
+  "description": "Meraki es un emprendimiento de cosmetología natural, 100% artesal, sustentable y ecofriendly. Meraki está comprometido con el cuidado del medio ambiente por lo que crea productos reutilizable y biodegradables.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
