@@ -38,7 +38,11 @@ footer {
         }
     }
 }
-
+.footer_ul_li_link {
+    &:hover{
+        color: map-get($estilosFuentes, colorM);
+    }
+}
 .iconosFooter {
     @include imgEstilo(100%);
 }

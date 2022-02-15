@@ -233,6 +233,10 @@ footer ul li h6 {
   margin-left: 1.8rem;
 }
 
+.footer_ul_li_link:hover {
+  color: #794100;
+}
+
 .iconosFooter {
   max-width: 100%;
   height: auto;
@@ -599,8 +603,16 @@ footer ul li h6 {
   padding-top: 6rem;
 }
 
+.primeraPagina:hover {
+  color: #FF661F;
+}
+
 .paginaActual {
   font-weight: 700;
+}
+
+.paginaActual:hover {
+  color: #FF661F;
 }
 
 .box_main_section {
