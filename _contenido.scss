@@ -134,9 +134,11 @@
 .botones_meraki {
     display: inline-block;
     background-color: #FF661F;
-    &:hover{
+
+    &:hover {
         background-color: #794100;
     }
+
     padding: 0.9rem 2rem;
     margin-bottom: 1.5rem;
 
@@ -605,7 +607,8 @@
     @extend .botones_meraki;
     background-color: map-get($estilosFuentes, colorM);
     padding: 0.9rem 4rem;
-    &:hover{
+
+    &:hover {
         background-color: #F3C188;
         color: #794100;
     }
@@ -1072,6 +1075,37 @@
 
 }
 
+/*---------------------página error 404----------------*/
+#error_section {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 1rem 1rem 1rem;
+}
+
+#error_section_div-bgimg {
+    @include imgFondo(url(../imagenes/ilus-404-mobile.svg), 180px, center);
+   width: 80%;
+}
+
+#error_section-font {
+    h1 {
+        color: map-get($estilosFuentes, colorM);
+        text-align: map-get($estilosFuentes, textAlign);
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        color: map-get($estilosFuentes, colorM);
+        text-align: map-get($estilosFuentes, textAlign);
+        margin-bottom: 1rem;
+    }
+}
+
+#error_section_div-estilobtn {
+    text-align: center;
+    margin: 3rem;
+}
+
 /*-------------------- TAMAÑO 480px -------------------*/
 @media screen and (min-width: 30em) {
 
@@ -1099,6 +1133,11 @@
                     font-size: 1.8rem;
                 }
             }
+        }
+    }
+    .footer_ul_li-flex{
+        a{
+            width: 10%;
         }
     }
 
@@ -1153,6 +1192,13 @@
         }
     }
 
+    /*-------------------página error 404, 480px-----------------*/
+    #error_section_div-bgimg {
+        min-height: 230px;
+        width: 70%;
+
+    }
+
 }
 
 /*--------------- TAMAÑO TABLETAS 768px -------------------------*/
@@ -1177,12 +1223,6 @@
     /*-----------FOOTER 768px---------*/
     footer {
         padding: 2rem 5rem;
-    }
-
-    .footer_ul_li-flex {
-        a {
-            width: 15%;
-        }
     }
 
     /*----------INDEX 768px-----------*/
@@ -1425,6 +1465,12 @@
         width: 60%;
     }
 
+    /*-------------------página error 404, 768px-----------------*/
+    #error_section_div-bgimg {
+        min-height: 370px;
+
+    }
+
 }
 
 /*--------------- TAMAÑO LAPTOP 1200px ------------------*/
@@ -1517,12 +1563,6 @@
         ul {
             width: 30%;
             margin-bottom: 2rem;
-        }
-    }
-
-    .footer_ul_li-flex {
-        a {
-            width: 15%;
         }
     }
 
@@ -1940,4 +1980,13 @@
         font-size: 2.0rem;
     }
 
+    /*-------------------página error 404, 768px-----------------*/
+    #error_section{
+        margin: 0rem;
+    }
+
+    #error_section_div-bgimg {
+        @include imgFondo(url(../imagenes/ilus-404.svg), 390px, center);
+        width: 80%;
+    }
 }

@@ -260,7 +260,7 @@ footer ul li h6 {
 }
 
 .footer_ul_li-flex a {
-  width: 20%;
+  width: 15%;
 }
 
 /*------------ css INDEX  mobile ---------*/
@@ -779,8 +779,7 @@ footer ul li h6 {
   margin-bottom: 2rem;
   padding: 0.5rem;
   color: #858585;
-  font-family: 'Montserrat',
- sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
 }
@@ -1319,6 +1318,45 @@ footer ul li h6 {
   width: 100%;
 }
 
+/*---------------------página error 404----------------*/
+#error_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem 1rem 1rem 1rem;
+}
+
+#error_section_div-bgimg {
+  background-image: url(../imagenes/ilus-404-mobile.svg);
+  min-height: 180px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 100%;
+  width: 100%;
+  width: 80%;
+}
+
+#error_section-font h1 {
+  color: #794100;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#error_section-font h2 {
+  color: #794100;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#error_section_div-estilobtn {
+  text-align: center;
+  margin: 3rem;
+}
+
 /*-------------------- TAMAÑO 480px -------------------*/
 @media screen and (min-width: 30em) {
   /*--------HEADER buscador 480px-------*/
@@ -1340,6 +1378,9 @@ footer ul li h6 {
   /*--------------FOOTER 480px------------*/
   footer ul li h6 {
     font-size: 1.8rem;
+  }
+  .footer_ul_li-flex a {
+    width: 10%;
   }
   /*--------------INDEX 480px--------------*/
   .section_ul_li_div {
@@ -1387,6 +1428,11 @@ footer ul li h6 {
   .sectionResena ul {
     margin-top: 3rem;
   }
+  /*-------------------página error 404, 480px-----------------*/
+  #error_section_div-bgimg {
+    min-height: 230px;
+    width: 70%;
+  }
 }
 
 /*--------------- TAMAÑO TABLETAS 768px -------------------------*/
@@ -1407,9 +1453,6 @@ footer ul li h6 {
   /*-----------FOOTER 768px---------*/
   footer {
     padding: 2rem 5rem;
-  }
-  .footer_ul_li-flex a {
-    width: 15%;
   }
   /*----------INDEX 768px-----------*/
   .imgFondo {
@@ -1608,6 +1651,10 @@ footer ul li h6 {
   .iniciarSesion_main_section_form {
     width: 60%;
   }
+  /*-------------------página error 404, 768px-----------------*/
+  #error_section_div-bgimg {
+    min-height: 370px;
+  }
 }
 
 /*--------------- TAMAÑO LAPTOP 1200px ------------------*/
@@ -1691,9 +1738,6 @@ footer ul li h6 {
   footer ul {
     width: 30%;
     margin-bottom: 2rem;
-  }
-  .footer_ul_li-flex a {
-    width: 15%;
   }
   /*-------------  INDEX 1200px -------------*/
   .imgFondo {
@@ -2027,6 +2071,20 @@ footer ul li h6 {
   .iniciarSesion_main_section_form_h5 {
     padding-bottom: 4rem;
     font-size: 2.0rem;
+  }
+  /*-------------------página error 404, 768px-----------------*/
+  #error_section {
+    margin: 0rem;
+  }
+  #error_section_div-bgimg {
+    background-image: url(../imagenes/ilus-404.svg);
+    min-height: 390px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 100%;
+    width: 100%;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=estilos_sass.css.map */
