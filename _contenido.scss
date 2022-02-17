@@ -13,7 +13,7 @@
 
     div {
         background-color: #FFFED3;
-        padding: 0.1rem 1.3rem 1rem 1.3rem;
+        padding: 0rem 1.3rem 1rem 1.3rem;
         text-align: map-get($estilosFuentes, textAlign);
     }
 }
@@ -441,7 +441,7 @@
 
 .contacto_main_section_form {
     figure {
-        width: 15%;
+        width: 14%;
         margin-bottom: 1.5rem;
     }
 }
@@ -461,7 +461,7 @@
     div {
         ul {
             li {
-                width: 25%;
+                width: 20%;
                 padding: 1.5rem 2rem 0rem 0rem;
             }
         }
@@ -1578,7 +1578,7 @@
     /*-------------  INDEX 1200px -------------*/
     .imgFondo {
         background-image: url(../imagenes/imgindexinicio.jpg);
-        min-height: 585px;
+        min-height: 500px;
 
         h1 {
             padding: 22rem 0rem 0rem 0rem;

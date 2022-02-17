@@ -264,7 +264,7 @@ footer ul li h6 {
 }
 
 .footer_ul_li-flex a {
-  width: 15%;
+  width: 12%;
 }
 
 /*------------ css INDEX  mobile ---------*/
@@ -289,7 +289,7 @@ footer ul li h6 {
 
 .main_article div {
   background-color: #FFFED3;
-  padding: 0.1rem 1.3rem 1rem 1.3rem;
+  padding: 0rem 1.3rem 1rem 1.3rem;
   text-align: center;
 }
 
@@ -730,7 +730,7 @@ footer ul li h6 {
 }
 
 .contacto_main_section_form figure {
-  width: 15%;
+  width: 14%;
   margin-bottom: 1.5rem;
 }
 
@@ -745,7 +745,7 @@ footer ul li h6 {
 }
 
 .contacto_main_section div ul li {
-  width: 25%;
+  width: 20%;
   padding: 1.5rem 2rem 0rem 0rem;
 }
 
@@ -1754,7 +1754,7 @@ footer ul li h6 {
   /*-------------  INDEX 1200px -------------*/
   .imgFondo {
     background-image: url(../imagenes/imgindexinicio.jpg);
-    min-height: 585px;
+    min-height: 500px;
   }
   .imgFondo h1 {
     padding: 22rem 0rem 0rem 0rem;
