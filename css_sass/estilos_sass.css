@@ -1249,7 +1249,7 @@ footer ul li h6 {
 
 .detalle_form_figure {
   margin-bottom: 1rem;
-  width: 60%;
+  width: 50%;
 }
 
 #cajaResena {
@@ -1316,7 +1316,7 @@ footer ul li h6 {
 }
 
 .sectionResena_ul_li_div_figure {
-  width: 40%;
+  width: 30%;
 }
 
 .sectionResena_ul_li_div h3 {
@@ -1648,9 +1648,6 @@ footer ul li h6 {
     margin: 2rem 4.5rem;
     padding: 4.5rem;
   }
-  .detalle_main_article p {
-    line-height: 3rem;
-  }
   /*----------------INICIA SESION 768px--------------*/
   #iniciarSesion_main_section {
     display: -webkit-box;
@@ -1912,6 +1909,9 @@ footer ul li h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0rem 0rem 2rem 0rem;
     padding: 2rem 4rem;
     text-align: start;
@@ -1985,7 +1985,7 @@ footer ul li h6 {
             flex-direction: row;
   }
   .detalle_main_section_divEspecificaciones {
-    width: 130%;
+    width: 100%;
     padding-left: 3rem;
     padding-top: 4rem;
     padding-right: 2rem;
@@ -2061,7 +2061,7 @@ footer ul li h6 {
     width: 75%;
   }
   .detalle_form_figure {
-    width: 35%;
+    width: 30%;
   }
   .detalle_form_div_input {
     text-align: start;
@@ -2097,6 +2097,19 @@ footer ul li h6 {
     max-width: 100%;
     width: 100%;
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 87.5em) {
+  /*--------------DETALLE PRODUCTO 1400px----------------*/
+  .detalle_main_article figure {
+    width: 40%;
+  }
+  .detalle_main_article p {
+    line-height: 3rem;
+  }
+  .detalle_producto_section_formUl ul {
+    margin-top: 3rem;
   }
 }
 /*# sourceMappingURL=estilos_sass.css.map */

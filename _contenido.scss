@@ -320,15 +320,16 @@
     }
 }
 
-.primeraPagina{
-    &:hover{
+.primeraPagina {
+    &:hover {
         color: #FF661F;
     }
 }
 
 .paginaActual {
     font-weight: 700;
-    &:hover{
+
+    &:hover {
         color: #FF661F;
     }
 }
@@ -994,7 +995,7 @@
 
 .detalle_form_figure {
     margin-bottom: 1rem;
-    width: 60%;
+    width: 50%;
 }
 
 #cajaResena {
@@ -1069,7 +1070,7 @@
 }
 
 .sectionResena_ul_li_div_figure {
-    width: 40%;
+    width: 30%;
 }
 
 .sectionResena_ul_li_div {
@@ -1093,7 +1094,7 @@
 
 #error_section_div-bgimg {
     @include imgFondo(url(../imagenes/ilus-404-mobile.svg), 180px, center);
-   width: 80%;
+    width: 80%;
 }
 
 #error_section-font {
@@ -1144,8 +1145,9 @@
             }
         }
     }
-    .footer_ul_li-flex{
-        a{
+
+    .footer_ul_li-flex {
+        a {
             width: 10%;
         }
     }
@@ -1458,10 +1460,6 @@
     .detalle_main_article {
         margin: 2rem 4.5rem;
         padding: 4.5rem;
-
-        p {
-            line-height: 3rem;
-        }
     }
 
     /*----------------INICIA SESION 768px--------------*/
@@ -1769,6 +1767,7 @@
 
     .productosSecciones {
         flex-direction: row;
+        justify-content: center;
         margin: 0rem 0rem 2rem 0rem;
         padding: 2rem 4rem;
         text-align: start;
@@ -1853,7 +1852,7 @@
     }
 
     .detalle_main_section_divEspecificaciones {
-        width: 130%;
+        width: 100%;
 
         padding: {
             left: 3rem;
@@ -1957,7 +1956,7 @@
     }
 
     .detalle_form_figure {
-        width: 35%;
+        width: 30%;
     }
 
     .detalle_form_div_input {
@@ -1990,12 +1989,34 @@
     }
 
     /*-------------------página error 404, 768px-----------------*/
-    #error_section{
+    #error_section {
         margin: 0rem;
     }
 
     #error_section_div-bgimg {
         @include imgFondo(url(../imagenes/ilus-404.svg), 390px, center);
         width: 80%;
+    }
+}
+
+@media screen and (min-width: 87.5em) {
+
+    /*--------------DETALLE PRODUCTO 1400px----------------*/
+    .detalle_main_article {
+        figure {
+            width: 40%;
+        }
+    }
+
+    .detalle_main_article {
+        p {
+            line-height: 3rem;
+        }
+    }
+
+    .detalle_producto_section_formUl {
+        ul{
+            margin-top: 3rem;
+        }
     }
 }
