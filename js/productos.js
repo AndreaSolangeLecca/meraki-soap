@@ -1,6 +1,7 @@
 class Articulo {
 
-    constructor(producto, precio) {
+    constructor(id, producto, precio) {
+        this.id = id;
         this.producto = producto;
         this.precio = parseInt(precio);
     }
@@ -9,9 +10,9 @@ class Articulo {
     }
 }
 
-const producto1 = new Articulo("jabonSaponificadoLimón", 260);
-const producto2 = new Articulo("jabonSaponificadoFlora", 300);
-const producto3 = new Articulo("jabonSaponificadoCacao", 260);
+const producto1 = new Articulo(1,"jabón saponificado Limón", 260);
+const producto2 = new Articulo(2, "jabón saponificado Flora", 300);
+const producto3 = new Articulo(3, "jabón saponificado Cacao", 260);
 
 let productosElegidos = [
     producto1,
@@ -118,3 +119,42 @@ function pagar() {
     }
 
 }
+
+let productosJabones = [
+    new Articulo(1,"jabón saponificado Limón", 260),
+    new Articulo(2, "jabón saponificado Flora", 300),
+    new Articulo(3, "jabón saponificado Cacao", 260),
+    new Articulo(4,"Jabón saponificado Rosa", 260),
+    new Articulo(5, "Jabón saponificado Lavanda", 260),
+    new Articulo(6, "Jabón saponificado Rosas", 300),
+    new Articulo(7, "Jabón saponificado Amapola", 260),
+    new Articulo(8, "Jabón vegano Carbón", 220),
+    new Articulo(9, "Jabón vegano Rosa", 230),
+    new Articulo(10, "Jabón vegano Maracuyá", 250),
+]
+
+/*para ver lista de precios*/ 
+let precios = productosJabones.map((el) => el.precio);
+console.log(precios);
+
+/*ordenar de menor precio a mayor precio*/
+console.log(precios.sort((a,b) => a-b));
+
+/*filtrar productos veganos disponibles*/ 
+let productoVegano = productosJabones.filter((el) => el.producto.includes("vegano"));
+console.log(productoVegano);  
+
+
+const eliminar = (producto) => {
+    
+    let index = productosJabones.indexOf(producto)
+
+    if (index != -1 ) {
+        productosJabones.splice(index, 1);
+    } 
+}
+
+eliminar(9);
+/*confirmo si eliminó el producto con id 9 */
+console.log( productosJabones.indexOf(9));
+
