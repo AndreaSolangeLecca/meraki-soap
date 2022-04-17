@@ -517,6 +517,23 @@ footer ul li h6 {
   padding: 0.5em;
 }
 
+.btnAgregarAlCarrito {
+  display: inline-block;
+  background-color: #FF661F;
+  padding: 0.9rem 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.0rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+}
+
+.btnAgregarAlCarrito:hover {
+  background-color: #794100;
+}
+
 /*---------------- GRID -------------------*/
 .productos_section-margenes {
   padding: 1rem 2.5rem;
@@ -585,6 +602,20 @@ footer ul li h6 {
 
 .cajaBnt {
   text-align: center;
+}
+
+/*-------------------CARRITO---------------------*/
+#carrito_main_section_div {
+  margin: 3rem;
+}
+
+button {
+  border: none;
+  color: #ffffff;
+}
+
+#carrito_h1 {
+  color: #FF661F;
 }
 
 /*------------ css BOX-MERAKI  mobile---------*/

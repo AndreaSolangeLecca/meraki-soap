@@ -21,7 +21,6 @@ let productosElegidos = [
 ]
 
 let nombre = prompt("Ingresa tu nombre:");
-let apellido = prompt("Ingresa tu apellido:");
 
 let eleccion = prompt(`Hola ${nombre}, bienvenid@ a Meraki, seleccione el producto que quiere adquirir:
     Digite  1 para ${producto1.producto}, precio ${producto1.precio}
