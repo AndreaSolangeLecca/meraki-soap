@@ -15,7 +15,7 @@
         content="artesanal, jabón saponificado, Jabón de limón y curcuma, jabones ecológicos, natural, suavidad">
 </head>
 
-<body>
+<body id="carrito_body">
     <header>
         <div class="navBar">
             <button class="bntMenu navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -35,8 +35,8 @@
                     <li class="nav-item"><a href="./sobrenosotros.html" class="nav_a nav-link">MERAKI</a></li>
                 </ul>
             </nav>
-            <a href="" class="header_div_a"><img src="../imagenes/icono-carrito-meraki.png" alt="icono-carrito"
-                    class="iconoCarrito"></a>
+            <a href="./carrito.html" class="header_div_a"><img src="../imagenes/icono-carrito-meraki.png"
+                    alt="icono-carrito" class="iconoCarrito"></a>
             <a href="./iniciarsesion.html" class="header_div_a"><img src="../imagenes/icono-usuario-meraki.png"
                     alt="icono usuario" class="iconoUsuario"></a>
         </div>
@@ -47,95 +47,80 @@
     </header>
     <main>
         <section>
-            <div id="carrito_main_section_div">
-                <h1 id="carrito_h1">Mi carrito</h1>
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="card">
-                            <div class="card-header">
-                                <h2>Agregar nuevo Producto</h2>
-                            </div>
-                            <div class="card-body">
-                                <form id="formulario">
-                                    <div class="form-group mb-4">
-                                        <input type="text" id="producto" class="form-control"
-                                            placeholder="ingrese un producto"/>
-                                    </div>
-                                    <div class="form-group mb-4">
-                                            <input type="number" id="precio" class="form-control" placeholder="ingresar el precio"/>
-                                    </div>
-                                    <button type="submit" class="botones_meraki">Agregar</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Producto</th>
-                                    <th scope="col">Precio</th>
-                                    <th scope="col">Editar</th>
-                                    <th scope="col">Eliminar</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tbody">
-                                    <tr>
-                                        <td>Jabón Saponificado limón y cúrcuma</td>
-                                        <td>260</td>
-                                        <td><button class="botones_meraki">Editar</button></td>
-                                        <td><button class="botones_meraki">Vaciar</button></td>
-                                    </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                   
+            <div id="carrito_section_div-contenedor">
+                <div class="col-md-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="titulos_tabla">Producto</th>
+                                <th scope="col" class="titulos_tabla">Precio</th>
+                                <th scope="col" class="titulos_tabla">cantidad</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                           
+                        </tbody>
+                    </table>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <ul>
-                <li><a href="../index.html" class="footer_ul_li_link">INICIO</a></li>
-                <li><a href="./productos.html" class="footer_ul_li_link">PRODUCTOS</a></li>
-                <li><a href="./boxmeraki.html" class="footer_ul_li_link">¡BOX MERAKI!</a></li>
-                <li><a href="./sobrenosotros.html" class="footer_ul_li_link">MERAKI</a></li>
-                <li><a href="./iniciarsesion.html" class="footer_ul_li_link">INICIAR SESIÓN</a></li>
-                <li><a href="./contacto.html" class="footer_ul_li_link">CONTACTO</a></li>
-            </ul>
-            <ul>
-                <li class="footer_li-margin">REDES SOCIALES</li>
-                <li class="footer_ul_li-flex">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/icono-facebook-meraki.png" alt="icono facebook" class="iconosFooter"></a>
-                    <h6>Facebook</h6>
-                </li>
-                <li class="footer_ul_li-flex">
-                    <a href="https://www.instagram.com/meraki.soap/" target="_blank"><img src="../imagenes/icono-intagram-meraki.png" alt="icono instagram" class="iconosFooter"></a>
-                    <h6>Instagram</h6>
-                </li>
-                <li>
-                    <img src="../imagenes/logo-meraki-soap.svg" alt="logotipo meraki" class="logoFooter">
-                </li>
-            </ul>
-            <ul>
-                <li class="footer_li-margin">CONTACTO</li>
-                <li class="footer_ul_li-flex">
-                    <a><img src="../imagenes/icono-mensajecorreo-meraki.png" alt="icono correo" class="iconosFooter"></a>
-                    <h6>meraki.soap@gmail.com</h6>
-                </li>
-                <li class="footer_ul_li-flex">
-                    <a><img src="../imagenes/icono-ubicación-meraki.png" alt="icono ubicación" class="iconosFooter"></a>
-                    <h6>Mar del Plata, Argentina</h6>
-                </li>
-                <li class="footer_ul_li-flex">
-                    <a><img src="../imagenes/icono-telefono-meraki.png" alt="icono telefono" class="iconosFooter"></a>
-                    <h6>2236357065</h6>
-                </li>
-            </ul>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="../js/js-bt/bootstrap.min.js"></script>
-        <script src="../js/carrito.js"></script>
-    </body>
-      
+
+                <div class="row mx-4">
+                    <div class="col">
+                        <h3 class="carrito_total">Total: 0</h3>
+                    </div>
+                </div>
+                <div class="col d-flex justify content-end">
+                    <button class="botones_meraki">Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="../index.html" class="footer_ul_li_link">INICIO</a></li>
+            <li><a href="./productos.html" class="footer_ul_li_link">PRODUCTOS</a></li>
+            <li><a href="./boxmeraki.html" class="footer_ul_li_link">¡BOX MERAKI!</a></li>
+            <li><a href="./sobrenosotros.html" class="footer_ul_li_link">MERAKI</a></li>
+            <li><a href="./iniciarsesion.html" class="footer_ul_li_link">INICIAR SESIÓN</a></li>
+            <li><a href="./contacto.html" class="footer_ul_li_link">CONTACTO</a></li>
+        </ul>
+        <ul>
+            <li class="footer_li-margin">REDES SOCIALES</li>
+            <li class="footer_ul_li-flex">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/icono-facebook-meraki.png"
+                        alt="icono facebook" class="iconosFooter"></a>
+                <h6>Facebook</h6>
+            </li>
+            <li class="footer_ul_li-flex">
+                <a href="https://www.instagram.com/meraki.soap/" target="_blank"><img
+                        src="../imagenes/icono-intagram-meraki.png" alt="icono instagram" class="iconosFooter"></a>
+                <h6>Instagram</h6>
+            </li>
+            <li>
+                <img src="../imagenes/logo-meraki-soap.svg" alt="logotipo meraki" class="logoFooter">
+            </li>
+        </ul>
+        <ul>
+            <li class="footer_li-margin">CONTACTO</li>
+            <li class="footer_ul_li-flex">
+                <a><img src="../imagenes/icono-mensajecorreo-meraki.png" alt="icono correo" class="iconosFooter"></a>
+                <h6>meraki.soap@gmail.com</h6>
+            </li>
+            <li class="footer_ul_li-flex">
+                <a><img src="../imagenes/icono-ubicación-meraki.png" alt="icono ubicación" class="iconosFooter"></a>
+                <h6>Mar del Plata, Argentina</h6>
+            </li>
+            <li class="footer_ul_li-flex">
+                <a><img src="../imagenes/icono-telefono-meraki.png" alt="icono telefono" class="iconosFooter"></a>
+                <h6>2236357065</h6>
+            </li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="../js/js-bt/bootstrap.min.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+
 </html>
