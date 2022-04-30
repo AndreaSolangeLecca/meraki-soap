@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/css-bt/bootstrap.min.css">
     <link rel="stylesheet" href="./css_sass/estilos_sass.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="description" content="Tienda online de Meraki. En Meraki creamos productos cosmeticos naturales, sustentables y ecofriendly">
     <meta name="keywords" content="cosmética natural, productos artesanales, jabones artesanales, sustentable, vegano">
 </head>
@@ -31,8 +33,10 @@
                     <li class="nav-item"><a href="./pages/sobrenosotros.html" class="nav_a nav-link">MERAKI</a></li>
                 </ul>
             </nav>
-            <a href="./pages/carrito.html" class="header_div_a"><img src="./imagenes/icono-carrito-meraki.png" alt="icono-carrito"
-                    class="iconoCarrito"></a>
+            <a class="header_div_a" id="button-carrito">
+                <img src="./imagenes/icono-carrito-meraki.png" alt="icono-carrito" class="iconoCarrito"><span
+                    id="contadorCarrito">0</span>
+            </a>
             <a href="./pages/iniciarsesion.html" class="header_div_a"><img src="./imagenes/icono-usuario-meraki.png"
                     alt="icono usuario" class="iconoUsuario"></a>
         </div>
@@ -164,9 +168,9 @@
             </li>
         </ul>
     </footer>
-    <script src="./js/codigoindex.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="./js/js-bt/bootstrap.min.js"></script>
+ 
 </body>
 
 </html>

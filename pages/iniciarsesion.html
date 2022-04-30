@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/css-bt/bootstrap.min.css">
     <link rel="stylesheet" href="../css_sass/estilos_sass.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="description" content="Tienda online Meraki, inicia sesión para obtener información exclusiva sobre nuestros productos y obtenerlos de manera fácil y rápida.">
     <meta name="keywords" content="iniciar sesión, usuario, tienda online">
 </head>
@@ -31,7 +33,10 @@
                     <li class="nav-item"><a href="./sobrenosotros.html" class="nav_a nav-link">MERAKI</a></li>
                 </ul>
             </nav>
-            <a href="./carrito.html" class="header_div_a"><img src="../imagenes/icono-carrito-meraki.png" alt="icono-carrito" class="iconoCarrito"></a>
+            <a class="header_div_a" id="button-carrito">
+                <img src="../imagenes/icono-carrito-meraki.png" alt="icono-carrito" class="iconoCarrito"><span
+                    id="contadorCarrito">0</span>
+            </a>
             <a href="./iniciarsesion.html" class="header_div_a"><img src="../imagenes/icono-usuario-meraki.png" alt="icono usuario"
                     class="iconoUsuario"></a>
         </div>
@@ -48,12 +53,12 @@
                 <div class="iniciarSesion_main_section_form_div"> 
                     <h1 id="iniciarSesion_main_section_form_h1" class="animate__animated animate__fadeInDown">INICIAR SESIÓN</h1>
                     <h4 class="iniciarSesion_main_section_form_h4">Correo electrónico</h4>
-                    <input type="email" placeholder="Ingresa acá tu correo electrónico" class="casilleroIniciar">
+                    <input type="email" placeholder="Ingresa acá tu correo electrónico" class="casilleroIniciar" required>
                     <h4 class="iniciarSesion_main_section_form_h4">Contraseña</h4>
-                    <input type="password" placeholder="Ingresa acá tu contraseña" class="casilleroIniciar">
+                    <input type="password" placeholder="Ingresa acá tu contraseña" required class="casilleroIniciar">
                     <ul class="iniciarSesion_main_section_form_ul">
                         <li><a href="../index.html" class="btnIngresar">Ingresar</a></li>
-                        <li><a href="./iniciarsesion.html" class="btnRegistrate">Regístrate</a></li>
+                        <li><a id="myBtn" class="btnRegistrate">Regístrate</a></li>
                     </ul>
                     <h5 class="iniciarSesion_main_section_form_h5">¿Olvidaste tu contraseña?</h5>
                 </div>
@@ -101,6 +106,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="../js/js-bt/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/iniciarsesion.js"></script>
 </body>
 
 </html>

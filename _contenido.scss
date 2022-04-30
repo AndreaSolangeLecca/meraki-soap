@@ -267,12 +267,9 @@
 
 .productos_section_ul-grid {
     display: grid;
-
-    grid: {
-        template-columns: repeat(auto-fill, minmax(305px, 1fr));
-        column-gap: 2.5rem;
-        row-gap: 2.5rem;
-    }
+    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2.5rem;
 }
 
 .productos_section_ul_li {
@@ -323,56 +320,10 @@
 
 .cajaBnt {
     text-align: map-get($estilosFuentes, textAlign);
+
 }
 /*----------------css CARRITO---------------------*/
-#carrito_body{
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-}
-#carrito_section_div-contenedor{
-    margin: 3rem;
-    text-align: -webkit-center;
-}
-.col-md-6 {
-    width: 70%;
-}
-#carrito_main_section_div {
-    margin: 3rem;
-}
-button{
-    border: none;
-    color: #ffffff;
-}
-#carrito_h1 {
-    color: #FF661F;
-}
-.tabla_imgProducto {
-    img {
-        width: 9rem;
-        object-fit: contain;
-        border-radius: 6px;
-        margin-right: 2rem; 
 
-    }
-}
-.botonesCarrito {
-    margin: 1.5rem;
-}
-tr {
-    vertical-align: middle;
-}
-.d-flex{
-    justify-content: center;
-}
-.titulos_tabla{
-    font-size: 1.5rem;
-    color: #FF661F;
-}
-.tabla_precioProducto{
-    font-size: 1.5rem;
-    
-}
 /*------------ css BOX-MERAKI  mobile---------*/
 .box_main_section-backgroundImg {
     @include imgFondo(url(../imagenes/img_boxmeraki-inicio2.jpg), 230px, center);
@@ -686,6 +637,9 @@ tr {
         color: #794100;
     }
 
+}
+.swal2-styled.swal2-confirm{
+    background-color: #FF661F !important;
 }
 
 .iniciarSesion_main_section_form_h5 {
@@ -1449,7 +1403,10 @@ tr {
     .productos_section-margenes {
         padding: 1rem 5rem;
     }
-
+    .productos_section_ul_li {
+        width: 80%;
+        justify-self: center;
+    }
     /*----------------SOBRE NOSOTROS 768px---------------*/
     .meraki_main_section_p {
         margin: {
@@ -1612,10 +1569,6 @@ tr {
 
     .logoMerakiHeader {
         padding-top: 0;
-    }
-
-    .iconoCarrito {
-        margin-right: 1.5em;
     }
 
     .cajaBuscador {

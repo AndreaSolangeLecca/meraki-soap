@@ -10,18 +10,25 @@
     <link rel="stylesheet" href="../css/css-bt/bootstrap.min.css">
     <link rel="stylesheet" href="../css_sass/estilos_sass.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <meta name="description" content="Catálogo de productos cosméticos naturales y 100% artesanales. En Meraki ofrecemos productos cosmeticos naturales, sustentables y ecofriendly.">
-    <meta name="keywords" content="jabones saponificados, jabones veganos, cosmética natural, productos artesanales, jabones artesanales, sustentable, vegano, ecofriendly">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="description"
+        content="Catálogo de productos cosméticos naturales y 100% artesanales. En Meraki ofrecemos productos cosmeticos naturales, sustentables y ecofriendly.">
+    <meta name="keywords"
+        content="jabones saponificados, jabones veganos, cosmética natural, productos artesanales, jabones artesanales, sustentable, vegano, ecofriendly">
 </head>
 
 <body>
     <header>
         <div class="navBar">
-            <button class="bntMenu navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="bntMenu navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class=" material-icons icono-menu hamburguesa">menu</i>
             </button>
             <div>
-                <a href="../index.html"><img src="../imagenes/logo-meraki-soap.svg" alt="logo meraki" class="logoMerakiHeader"></a>
+                <a href="../index.html"><img src="../imagenes/logo-meraki-soap.svg" alt="logo meraki"
+                        class="logoMerakiHeader"></a>
             </div>
             <nav class="nav collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
@@ -31,8 +38,10 @@
                     <li class="nav-item"><a href="./sobrenosotros.html" class="nav_a nav-link">MERAKI</a></li>
                 </ul>
             </nav>
-            <a href="./carrito.html" class="header_div_a"><img src="../imagenes/icono-carrito-meraki.png" alt="icono-carrito"
-                    class="iconoCarrito"></a>
+            <a class="header_div_a" id="button-carrito">
+                <img src="../imagenes/icono-carrito-meraki.png" alt="icono-carrito" class="iconoCarrito"><span
+                    id="contadorCarrito">0</span>
+            </a>
             <a href="./iniciarsesion.html" class="header_div_a"><img src="../imagenes/icono-usuario-meraki.png"
                     alt="icono usuario" class="iconoUsuario"></a>
         </div>
@@ -50,9 +59,9 @@
         <section class="productosSecciones">
             <div class="productosSecciones_div">
                 <a href="./productos.html" id="pagSeleccionada">Jabones</a>
-                <a href="./error404.html">Cabello</a>
-                <a href="./error404.html">Cremas</a>
-                <a href="./error404.html">Cuidado personal</a>
+                <a href="./productos.html">Cabello</a>
+                <a href="./productos.html">Cremas</a>
+                <a href="./productos.html">Cuidado personal</a>
             </div>
             <div class="cajaFiltro">
                 <select class="productos_main_section_select">
@@ -65,162 +74,36 @@
                 </select>
             </div>
         </section>
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+                <h3>Mi carrito</h3>
+                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                <div>
+                    <div id="titulos-carrito-contenedor">
+                        <p>Producto</p>
+                        <p>Descripción</p>
+                        <p>Precio</p>
+                        <p>Eliminar</p>
+                    </div>
+                    <div id="carrito-contenedor">
+                        <!--
+                           <div class="productoEnCarrito">
+                               <p>producto1</p>
+                               <p>tipo1</p>
+                               <p>precio: $260</p>
+                               <button class="boton-eliminar"><i class="fas fa-trash-alt" style="font-size:24px;color:red" aria-hidden="true"></i></button>
+                           </div> 
+                        -->
+                    </div>
+                </div>        
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="vaciar-carrito" class="botones_meraki"> Vaciar carrito</button>
+            </div>
+        </div>
         <section class="productos_section-margenes">
             <!-- Apliqué GRID al contenedor padre-->
             <ul class="productos_section_ul-grid">
-                <li class="productos_section_ul_li">
-                    <figure class="productos_section_ul_li_figure"><img src="../imagenes/img-productos-jabon2.jpg"
-                            alt="Limon y cúrcuma" class="productos_section_ul_li_img"></figure>
-                    <ul class="productos_section_ul_ul">
-                        <li class="productos_section_ul_ul_li">
-                            <h3>Jabón saponificado</h3>
-                            <h3 class="precioProducto">$260</h3>
-                        </li>
-                        <li class="productos_section_ul_ul_li">
-                            <h4 class="tituloProducto">Limón y cúrcuma</h4>
-                            <figure><img src="../imagenes/cincoestrellas-meraki.png" alt="cinco estrellas"
-                                    class="productos_section_ul_li_img"></figure>
-                        </li>
-                        <li class="cajaBnt"><a href="./detalleproducto.html" class="botones_meraki">Ver más</a></li>
-                        <li class="cajaBnt"><button class="btnAgregarAlCarrito">Añadir al carrito</button></li>
-                    </ul>
-                </li>
-                <li class="productos_section_ul_li">
-                    <figure class="productos_section_ul_li_figure"><img src="../imagenes/img-productos-jabon3.jpg"
-                            alt="Flora" class="productos_section_ul_li_img"></figure>
-                    <ul class="productos_section_ul_ul">
-                        <li class="productos_section_ul_ul_li">
-                            <h3>Jabón saponificado</h3>
-                            <h3 class="precioProducto">$300</h3>
-                        </li>
-                        <li class="productos_section_ul_ul_li">
-                            <h4 class="tituloProducto">Flora</h4>
-                            <figure><img src="../imagenes/cincoestrellas-meraki.png" alt="cinco estrellas"
-                                    class="productos_section_ul_li_img"></figure>
-                        </li>
-                        <li class="cajaBnt"><a href="./error404.html" class="botones_meraki">Ver más</a></li>
-                        <li class="cajaBnt"><button class="btnAgregarAlCarrito">Añadir al carrito</button></li>
-                    </ul>
-                </li>
-                <li class="productos_section_ul_li">
-                    <figure class="productos_section_ul_li_figure"><img src="../imagenes/img-productos-jabon8.jpg"
-                            alt="Cacao puro" class="productos_section_ul_li_img"></figure>
-                    <ul class="productos_section_ul_ul">
-                        <li class="productos_section_ul_ul_li">
-                            <h3>Jabón saponificado</h3>
-                            <h3 class="precioProducto">$260</h3>
-                        </li>
-                        <li class="productos_section_ul_ul_li">
-                            <h4 class="tituloProducto">Cacao puro</h4>
-                            <figure><img src="../imagenes/cincoestrellas-meraki.png" alt="cinco estrellas"
-                                    class="productos_section_ul_li_img"></figure>
-                        </li>
-                        <li class="cajaBnt"><a href="./error404.html" class="botones_meraki">Ver más</a></li>
-                        <li class="cajaBnt"><button class="btnAgregarAlCarrito">Añadir al carrito</button></li>
-                    </ul>
-                </li>
-                <li class="productos_section_ul_li">
-                    <figure class="productos_section_ul_li_figure"><img src="../imagenes/img-productos-jabon4.jpg"
-                            alt="Rosa mosqueta" class="productos_section_ul_li_img"></figure>
-                    <ul class="productos_section_ul_ul">
-                        <li class="productos_section_ul_ul_li">
-                            <h3>Jabón saponificado</h3>
-                            <h3  class="precioProducto">$260</h3>
-                        </li>
-                        <li class="productos_section_ul_ul_li">
-                            <h4 class="tituloProducto">Rosa mosqueta</h4>
-                            <figure><img src="../imagenes/cincoestrellas-meraki.png" alt="cinco estrellas"
-                                    class="productos_section_ul_li_img"></figure>
-                        </li>
-                        <li class="cajaBnt"><a href="./error404.html" class="botones_meraki">Ver más</a></li>
-                        <li class="cajaBnt"><button class="btnAgregarAlCarrito">Añadir al carrito</button></li>
-                    </ul>
-                </li>
-                <li class="productos_section_ul_li">
-                    <figure class="productos_section_ul_li_figure"><img src="../imagenes/img-productos-jabon5.jpg"
-                            alt="Lavanda y aloe" class="productos_section_ul_li_img"></figure>
-                    <ul class="productos_section_ul_ul">
-                        <li class="productos_section_ul_ul_li">
-                            <h3>Jabón saponificado</h3>
-                            <h3 class="precioProducto">$260</h3>
-                        </li>
-                        <li class="productos_section_ul_ul_li">
-                            <h4 class="tituloProducto">Lavanda y aloe</h4>
-                            <figure><img src="../imagenes/cincoestrellas-meraki.png" alt="cinco estrellas"
-                                    class="productos_section_ul_li_img"></figure>
-                        </li>
-                        <li class="cajaBnt"><a href="./error404.html" class="botones_meraki">Ver más</a></li>
-                        <li class="cajaBnt"><button class="btnAgregarAlCarrito">Añadir al carrito</button></li>
-                    </ul>
-                </li>
-                <li class="productos_section_ul_li">
-                    <figure class="productos_section_ul_li_figure"><img src="../imagenes/img-productos-jabon6.jpg"
-                            alt="Rosas lavanda" class="productos_section_ul_li_img"></figure>
-                    <ul class="productos_section_ul_ul">
-                        <li class="productos_section_ul_ul_li">
-                            <h3>Jabón saponificado</h3>
-                            <h3 class="precioProducto">$300</h3>
-                        </li>
-                        <li class="productos_section_ul_ul_li">
-                            <h4 class="tituloProducto">Rosas lavanda</h4>
-                            <figure><img src="../imagenes/cincoestrellas-meraki.png" alt="cinco estrellas"
-                                    class="productos_section_ul_li_img"></figure>
-                        </li>
-                        <li class="cajaBnt"><a href="./error404.html" class="botones_meraki">Ver más</a></li>
-                        <li class="cajaBnt"><button class="btnAgregarAlCarrito">Añadir al carrito</button></li>
-                    </ul>
-                </li>
-                <li class="productos_section_ul_li">
-                    <figure class="productos_section_ul_li_figure"><img src="../imagenes/img-productos-jabon7.jpg"
-                            alt="Limón y amapola" class="productos_section_ul_li_img"></figure>
-                    <ul class="productos_section_ul_ul">
-                        <li class="productos_section_ul_ul_li">
-                            <h3>Jabón saponificado</h3>
-                            <h3 class="precioProducto">$260</h3>
-                        </li>
-                        <li class="productos_section_ul_ul_li">
-                            <h4 class="tituloProducto">Limón y amapola</h4>
-                            <figure><img src="../imagenes/cincoestrellas-meraki.png" alt="cinco estrellas"
-                                    class="productos_section_ul_li_img"></figure>
-                        </li>
-                        <li class="cajaBnt"><a href="./error404.html" class="botones_meraki">Ver más</a></li>
-                        <li class="cajaBnt"><button class="btnAgregarAlCarrito">Añadir al carrito</button></li>
-                    </ul>
-                </li>
-                <li class="productos_section_ul_li">
-                    <figure class="productos_section_ul_li_figure"><img src="../imagenes/img-productos-jabon1.jpg"
-                            alt="Carbón activado" class="productos_section_ul_li_img"></figure>
-                    <ul class="productos_section_ul_ul">
-                        <li class="productos_section_ul_ul_li">
-                            <h3>Jabón vegano</h3>
-                            <h3 class="precioProducto">$220</h3>
-                        </li>
-                        <li class="productos_section_ul_ul_li">
-                            <h4 class="tituloProducto">Carbón activado</h4>
-                            <figure><img src="../imagenes/cincoestrellas-meraki.png" alt="cinco estrellas"
-                                    class="productos_section_ul_li_img"></figure>
-                        </li>
-                        <li class="cajaBnt"><a href="./error404.html" class="botones_meraki">Ver más</a></li>
-                        <li class="cajaBnt"><button class="btnAgregarAlCarrito">Añadir al carrito</button></li>
-                    </ul>
-                </li>
-                <li class="productos_section_ul_li">
-                    <figure class="productos_section_ul_li_figure"><img src="../imagenes/img-productos-jabon9.jpg"
-                            alt="Rosa mosqueta" class="productos_section_ul_li_img"></figure>
-                    <ul class="productos_section_ul_ul">
-                        <li class="productos_section_ul_ul_li">
-                            <h3>Jabón vegano</h3>
-                            <h3 class="precioProducto">$230</h3>
-                        </li>
-                        <li class="productos_section_ul_ul_li">
-                            <h4 class="tituloProducto">Rosa mosqueta Vegano</h4>
-                            <figure><img src="../imagenes/cuatroestrellas-meraki.png" alt="cuatro estrellas"
-                                    class="productos_section_ul_li_img"></figure>
-                        </li>
-                        <li class="cajaBnt"><a href="./error404.html" class="botones_meraki">Ver más</a></li>
-                        <li class="cajaBnt"><button class="btnAgregarAlCarrito">Añadir al carrito</button></li>
-                    </ul>
-                </li>
+
             </ul>
         </section>
     </main>
@@ -236,11 +119,13 @@
         <ul>
             <li class="footer_li-margin">REDES SOCIALES</li>
             <li class="footer_ul_li-flex">
-                <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/icono-facebook-meraki.png" alt="icono facebook" class="iconosFooter"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/icono-facebook-meraki.png"
+                        alt="icono facebook" class="iconosFooter"></a>
                 <h6>Facebook</h6>
             </li>
             <li class="footer_ul_li-flex">
-                <a href="https://www.instagram.com/meraki.soap/" target="_blank"><img src="../imagenes/icono-intagram-meraki.png" alt="icono instagram" class="iconosFooter"></a>
+                <a href="https://www.instagram.com/meraki.soap/" target="_blank"><img
+                        src="../imagenes/icono-intagram-meraki.png" alt="icono instagram" class="iconosFooter"></a>
                 <h6>Instagram</h6>
             </li>
             <li>
@@ -263,9 +148,13 @@
             </li>
         </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
     <script src="../js/js-bt/bootstrap.min.js"></script>
-    <script src="../js/productos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/stockproductos.js"></script>
     <script src="../js/carrito.js"></script>
 </body>
 

@@ -199,7 +199,13 @@ header {
   max-width: 100%;
   height: auto;
   width: 30px;
+}
+
+#contadorCarrito {
   margin-right: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #794100;
 }
 
 .iconoUsuario {
@@ -207,6 +213,138 @@ header {
   height: auto;
   width: 20px;
   margin-right: 2.8em;
+}
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-carrito {
+  position: relative;
+  background-color: #ffffff;
+  min-width: 700px;
+  padding: 20px;
+  margin-top: -100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+  margin-top: 15em;
+  height: 450px;
+}
+
+.modal-carrito h3 {
+  color: #FF661F;
+  padding-bottom: 5px;
+  font-size: 3rem;
+}
+
+.modal-carrito #carritoCerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  color: #FF661F;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: initial;
+  transition: initial;
+}
+
+.modal-carrito #carritoCerrar:hover {
+  cursor: pointer;
+}
+
+.modal-carrito #carritoCerrar:focus {
+  outline: none;
+}
+
+.precioProducto {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #794100;
+}
+
+.fas {
+  font-weight: 700;
+}
+
+.boton-eliminar {
+  border: none;
+  width: 25%;
+  text-align: left;
+  background-color: transparent;
+}
+
+.productoEnCarrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.productoEnCarrito p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 25%;
+  padding-bottom: 1.5rem;
+}
+
+#vaciar-carrito {
+  border: none;
+  color: #ffffff;
+  margin-top: 3rem;
+}
+
+#titulos-carrito-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#titulos-carrito-contenedor p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 25%;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #FF661F;
+  border-bottom: solid 0.2em #FF661F;
 }
 
 /*------------- FOOTER  mobile ------------*/
@@ -605,67 +743,6 @@ footer ul li h6 {
 }
 
 /*----------------css CARRITO---------------------*/
-#carrito_body {
-  display: -ms-grid;
-  display: grid;
-  min-height: 100vh;
-  -ms-grid-rows: auto 1fr auto;
-      grid-template-rows: auto 1fr auto;
-}
-
-#carrito_section_div-contenedor {
-  margin: 3rem;
-  text-align: -webkit-center;
-}
-
-.col-md-6 {
-  width: 70%;
-}
-
-#carrito_main_section_div {
-  margin: 3rem;
-}
-
-button {
-  border: none;
-  color: #ffffff;
-}
-
-#carrito_h1 {
-  color: #FF661F;
-}
-
-.tabla_imgProducto img {
-  width: 9rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 6px;
-  margin-right: 2rem;
-}
-
-.botonesCarrito {
-  margin: 1.5rem;
-}
-
-tr {
-  vertical-align: middle;
-}
-
-.d-flex {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.titulos_tabla {
-  font-size: 1.5rem;
-  color: #FF661F;
-}
-
-.tabla_precioProducto {
-  font-size: 1.5rem;
-}
-
 /*------------ css BOX-MERAKI  mobile---------*/
 .box_main_section-backgroundImg {
   background-image: url(../imagenes/img_boxmeraki-inicio2.jpg);
@@ -963,6 +1040,10 @@ tr {
 .btnRegistrate:hover {
   background-color: #F3C188;
   color: #794100;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #FF661F !important;
 }
 
 .iniciarSesion_main_section_form_h5 {
@@ -1662,6 +1743,11 @@ tr {
   .productos_section-margenes {
     padding: 1rem 5rem;
   }
+  .productos_section_ul_li {
+    width: 80%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
   /*----------------SOBRE NOSOTROS 768px---------------*/
   .meraki_main_section_p {
     margin-top: 2rem;
@@ -1806,9 +1892,6 @@ tr {
   }
   .logoMerakiHeader {
     padding-top: 0;
-  }
-  .iconoCarrito {
-    margin-right: 1.5em;
   }
   .cajaBuscador {
     padding-bottom: 1rem;
