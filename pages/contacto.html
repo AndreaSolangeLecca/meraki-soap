@@ -69,19 +69,21 @@
                     </ul>
                 </div>
             </div>
-            <form class="contacto_main_section_form">
+            <form class="contacto_main_section_form" id="contactoForm"
+            action="https://formspree.io/f/mwkywgyp" method="POST">
                 <p class="contacto_main_form_p">O desde aquí puedes contactarnos para resolver cualquier duda que tengas
                     y nos pondremos en
                     contacto contigo.</p>
                 <figure><img src="../imagenes/img-email-meraki.png" alt="icono email" class="contactoIconos"></figure>
 
-                <input type="text" placeholder="Nombre(s)" class="casilleroIniciar">
+                <input type="text" placeholder="Nombre(s)" class="casilleroIniciar" name="name" required>
+                <input type="text" placeholder="Apellido(s)" class="casilleroIniciar" name="last" required>
+                <input type="email" placeholder="Correo electrónico" class="casilleroIniciar" name="email" required>
 
-                <input type="email" placeholder="Correo electrónico" class="casilleroIniciar">
-
-                <textarea name="comentario" id="cajaComentario"
-                    class="casilleroiniciar">Escribinos tu mensaje acá</textarea>
-                <input type="submit" value="Enviar consulta" class="btnContacto">
+                <textarea name="message" id="cajaComentario"
+                    class="casilleroiniciar" required>Escribinos tu mensaje acá
+                </textarea>
+                <button type="submit" class="btnContacto">Enviar consulta</button>
             </form>
         </section>
     </main>
@@ -126,6 +128,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="../js/js-bt/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/contacto.js"></script>
    
 </body>
 
